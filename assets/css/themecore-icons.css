@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'wprticons';
-  src:  url('../font/theme-core.eot?g49o0u');
-  src:  url('../font/theme-core.eot?g49o0u#iefix') format('embedded-opentype'),
-    url('../font/theme-core.ttf?g49o0u') format('truetype'),
-    url('../font/theme-core.woff?g49o0u') format('woff'),
-    url('../font/theme-core.svg?g49o0u#theme-core') format('svg');
+  src:  url('../font/theme-corea727.eot');
+  src:  url('../font/theme-corea727.eot') format('embedded-opentype'),
+    url('../font/theme-corea727.ttf') format('truetype'),
+    url('../font/theme-corea727.woff') format('woff'),
+    url('../font/theme-corea727.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
