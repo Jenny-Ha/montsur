@@ -1,3 +1,5 @@
+/*
+ORIGINAL URL PATH LIKE CSS FILE
 @font-face {
   font-family: 'wprticons';
   src:  url('../font/theme-corea727.eot');
@@ -5,6 +7,17 @@
     url('../font/theme-corea727.ttf') format('truetype'),
     url('../font/theme-corea727.woff') format('woff'),
     url('../font/theme-corea727.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+@font-face {
+  font-family: 'wprticons';
+  src:  url('assets/font/theme-corea727.eot');
+  src:  url('assets/font/theme-corea727.eot') format('embedded-opentype'),
+    url('assets/font/theme-corea727.ttf') format('truetype'),
+    url('assets/font/theme-corea727.woff') format('woff'),
+    url('assets/font/theme-corea727.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
