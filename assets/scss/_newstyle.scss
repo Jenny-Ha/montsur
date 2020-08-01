@@ -1,0 +1,59 @@
+/*
+----------MONTSUR STYLES----------
+BY: Jenny Ha
+*/
+
+//VARIABLES
+$bluedark: #2a478f;
+$bluemiddle: #2a75b8;
+$bluelight: #2a8fca;
+
+$grisdark:#3a3a3c;
+$grismiddle:#4b4b4d;
+$grislight:#a5a4a7;
+
+$text-primary:$bluemiddle;
+$accentbtn: #1c63b8;
+/* GENERAL */
+.max-container {
+    max-width: 1000px;
+}
+/* HEADER*/
+#site-logo-inner{
+    background-color: white;
+    img {
+        height: 52px;
+    }
+}
+
+/* MS - SLIDER */
+.text-colored {
+    color: $text-primary;
+    //text-shadow: 1px 1px whitesmoke;
+}
+#rev-slider2 {
+    .wprt-button.outline {
+        border: 1px solid white;
+        color:white;
+        margin: 0px 5px;
+        &:hover {
+            border-color: $accentbtn;
+        }
+    }
+}
+
+/* FOOTER */
+#footer {
+    padding: 70px 0 35px;
+    .logo-footer {
+        height: 80px;
+    }
+}
+#bottom {
+    padding: 20px 0px;
+    border-top: 1px solid $grismiddle;
+    /* .bottom-bar-content {
+        display: block;
+        margin: 0px -15px;
+    } */
+}

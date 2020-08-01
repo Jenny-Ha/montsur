@@ -15975,10 +15975,22 @@ ORIGINAL URL PATH LIKE CSS FILE
 }
 
 /* CARSERVICE-ICONS */
+/* Importacion de font por defecto. 
+Corregir con un mixin */
+/* @font-face {
+  font-family: 'carservice';
+  src:  url('../font/carservice.eot?gdbb9j');
+  src:  url('../font/carservice.eot?gdbb9j#iefix') format('embedded-opentype'),
+    url('../font/carservice.ttf?gdbb9j') format('truetype'),
+    url('../font/carservice.woff?gdbb9j') format('woff'),
+    url('../font/carservice.svg?gdbb9j#carservice') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} */
 @font-face {
   font-family: 'carservice';
-  src: url("../font/carservice.eot?gdbb9j");
-  src: url("../font/carservice.eot?gdbb9j#iefix") format("embedded-opentype"), url("../font/carservice.ttf?gdbb9j") format("truetype"), url("../font/carservice.woff?gdbb9j") format("woff"), url("../font/carservice.svg?gdbb9j#carservice") format("svg");
+  src: url("assets/font/carservice9594.eot");
+  src: url("assets/font/carservice9594.eot#iefix") format("embedded-opentype"), url("assets/font/carservice9594.ttf") format("truetype"), url("assets/font/carservice9594.woff") format("woff"), url("assets/font/carservice9594.svg#carservice") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -44284,5 +44296,56 @@ body.page #main-content {
   .woocommerce-pagination {
     margin-top: 40px;
   }
+}
+
+/*
+----------MONTSUR STYLES----------
+BY: Jenny Ha
+*/
+/* GENERAL */
+.max-container {
+  max-width: 1000px;
+}
+
+/* HEADER*/
+#site-logo-inner {
+  background-color: white;
+}
+
+#site-logo-inner img {
+  height: 52px;
+}
+
+/* MS - SLIDER */
+.text-colored {
+  color: #2a75b8;
+}
+
+#rev-slider2 .wprt-button.outline {
+  border: 1px solid white;
+  color: white;
+  margin: 0px 5px;
+}
+
+#rev-slider2 .wprt-button.outline:hover {
+  border-color: #1c63b8;
+}
+
+/* FOOTER */
+#footer {
+  padding: 70px 0 35px;
+}
+
+#footer .logo-footer {
+  height: 80px;
+}
+
+#bottom {
+  padding: 20px 0px;
+  border-top: 1px solid #4b4b4d;
+  /* .bottom-bar-content {
+        display: block;
+        margin: 0px -15px;
+    } */
 }
 /*# sourceMappingURL=style.css.map */
