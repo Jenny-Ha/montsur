@@ -44327,6 +44327,11 @@ BY: Jenny Ha
   border-color: #1c63b8;
 }
 
+/* CERTIFIED */
+.row-certified-1 {
+  background: url(/assets/img/gallery/gallery-1-full.jpg) center center;
+}
+
 /* FOOTER */
 #footer {
   padding: 70px 0 35px;
