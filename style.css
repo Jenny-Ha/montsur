@@ -44307,6 +44307,47 @@ BY: Jenny Ha
   max-width: 1000px;
 }
 
+/* BOTONS FIXED */
+#btn_brochure {
+  width: 36px;
+  height: 49px;
+  display: block;
+  position: fixed;
+  top: 377px;
+  right: 0;
+  z-index: 999;
+  border-radius: 6px 0 0 6px;
+  -webkit-box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.45);
+          box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.45);
+  background: url(assets/img/montsur/icono_brochure.png) no-repeat center;
+}
+
+#btn_brochure a {
+  width: 37px;
+  height: 49px;
+  display: block;
+}
+
+#btn_certificados {
+  width: 36px;
+  height: 49px;
+  display: block;
+  position: fixed;
+  top: 320px;
+  right: 0;
+  z-index: 999;
+  border-radius: 6px 0 0 6px;
+  -webkit-box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.45);
+          box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.45);
+  background: url(assets/img/montsur/icono_certificados.png) no-repeat center;
+}
+
+#btn_certificados a {
+  width: 37px;
+  height: 49px;
+  display: block;
+}
+
 /* HEADER*/
 #site-logo-inner img {
   height: 52px;

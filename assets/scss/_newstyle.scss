@@ -18,6 +18,41 @@ $accentbtn: #1c63b8;
 .max-container {
     max-width: 1000px;
 }
+/* BOTONS FIXED */
+#btn_brochure {
+    width: 36px;
+    height: 49px;
+    display: block;
+    position: fixed;
+    top: 377px;
+    right: 0;
+    z-index: 999;
+    border-radius: 6px 0 0 6px;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, .45);
+    background: url(assets/img/montsur/icono_brochure.png) no-repeat center;
+    a {
+        width: 37px;
+        height: 49px;
+        display: block;
+    }
+}
+#btn_certificados {
+    width: 36px;
+    height: 49px;
+    display: block;
+    position: fixed;
+    top: 320px;
+    right: 0;
+    z-index: 999;
+    border-radius: 6px 0 0 6px;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, .45);
+    background: url(assets/img/montsur/icono_certificados.png) no-repeat center;
+    a {
+        width: 37px;
+        height: 49px;
+        display: block;
+    }
+}
 /* HEADER*/
 #site-logo-inner{
     //background-color: white;
