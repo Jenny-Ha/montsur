@@ -44302,9 +44302,21 @@ body.page #main-content {
 ----------MONTSUR STYLES----------
 BY: Jenny Ha
 */
+* {
+  outline: 1px solid rgba(173, 255, 47, 0.5) !important;
+}
+
 /* GENERAL */
 .max-container {
   max-width: 1000px;
+}
+
+.text-white {
+  color: whitesmoke;
+}
+
+.bold-700 {
+  font-weight: 700;
 }
 
 /* BOTONS FIXED */
@@ -44370,7 +44382,33 @@ BY: Jenny Ha
 
 /* CERTIFIED */
 .row-certified-1 {
-  background: url(/assets/img/gallery/gallery-1-full.jpg) center center;
+  background: url(/assets/img/montsur/bg_respaldo.png) center center;
+  position: relative;
+}
+
+.row-certified-1:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.row-certified-1 .image-respaldo {
+  display: block;
+  margin: auto;
+  width: 280px;
+  padding: 15px 0px 0px;
+}
+
+.row-certified-1 .text-respaldo {
+  padding: 30px 0px 0px;
+}
+
+.row-certified-1 .text-respaldo .text-medium {
+  font-size: 130%;
 }
 
 /* FOOTER */

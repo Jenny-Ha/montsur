@@ -14,9 +14,20 @@ $grislight:#a5a4a7;
 
 $text-primary:$bluemiddle;
 $accentbtn: #1c63b8;
+
+// Contenedores
+* {
+    outline: 1px solid rgba(greenyellow, 0.5) !important;
+}
 /* GENERAL */
 .max-container {
     max-width: 1000px;
+}
+.text-white {
+    color: whitesmoke;
+}
+.bold-700 {
+    font-weight: 700;
 }
 /* BOTONS FIXED */
 #btn_brochure {
@@ -78,8 +89,33 @@ $accentbtn: #1c63b8;
 }
 /* CERTIFIED */
 .row-certified-1 {
-    background: url(/assets/img/gallery/gallery-1-full.jpg) center center;
+    background: url(/assets/img/montsur/bg_respaldo.png) center center;
+    position: relative;
+    //Overlay 
+    &:before {
+        content:'';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.55);
+    }
+    .image-respaldo {
+        display: block;
+        margin: auto;
+        //margin-right: 0px;
+        width: 280px;
+        padding: 15px 0px 0px;
+    }
+    .text-respaldo {
+        padding: 30px 0px 0px;
+        .text-medium {
+            font-size: 130%;
+        }
+    }
 }
+
 /* FOOTER */
 #footer {
     padding: 70px 0 35px;
