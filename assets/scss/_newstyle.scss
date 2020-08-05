@@ -12,8 +12,9 @@ $grisdark:#3a3a3c;
 $grismiddle:#4b4b4d;
 $grislight:#a5a4a7;
 
-$text-primary:$bluemiddle;
 $accentbtn: #1c63b8;
+// $text-primary:$bluemiddle;
+$text-primary:$accentbtn;
 
 // Contenedores
 * {
@@ -182,8 +183,47 @@ body {
 #footer {
     padding: 70px 0 35px;
     .logo-footer {
-        height: 80px;
+        height: 100px;
     }
+    .textwidget {
+        p {
+            margin-bottom: 0px;
+        }
+    }
+
+    // Contacto
+    .widget_information {
+        margin-top: 30px;;
+    }
+    .widget-title {
+        padding-left: 28px;
+    }
+    .wprt-list.style-2.icon-top  {
+        margin-bottom: 5px;
+        .icon {
+            top: 4px;
+            >i {
+                font-size: 16px;
+            }
+            .rt-icon-facebook {
+                font-size: 18px;
+                margin-left:  -2px;
+            }
+        }
+        .iw-fb {
+            .icon {
+                top: 0px;
+            }
+        }
+        .text {
+            margin-bottom: 5px;
+            line-height: 1.75;
+        }
+    }
+    .widget-link {
+        color: #b1b1b1;
+    }
+        
 }
 #bottom {
     padding: 20px 0px;

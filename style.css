@@ -41333,7 +41333,7 @@ body {
 
 /* MS - SLIDER */
 .text-colored {
-  color: #2a75b8;
+  color: #1c63b8;
 }
 
 #rev-slider2 .wprt-button.outline {
@@ -41422,7 +41422,49 @@ body {
 }
 
 #footer .logo-footer {
-  height: 80px;
+  height: 100px;
+}
+
+#footer .textwidget p {
+  margin-bottom: 0px;
+}
+
+#footer .widget_information {
+  margin-top: 30px;
+}
+
+#footer .widget-title {
+  padding-left: 28px;
+}
+
+#footer .wprt-list.style-2.icon-top {
+  margin-bottom: 5px;
+}
+
+#footer .wprt-list.style-2.icon-top .icon {
+  top: 4px;
+}
+
+#footer .wprt-list.style-2.icon-top .icon > i {
+  font-size: 16px;
+}
+
+#footer .wprt-list.style-2.icon-top .icon .rt-icon-facebook {
+  font-size: 18px;
+  margin-left: -2px;
+}
+
+#footer .wprt-list.style-2.icon-top .iw-fb .icon {
+  top: 0px;
+}
+
+#footer .wprt-list.style-2.icon-top .text {
+  margin-bottom: 5px;
+  line-height: 1.75;
+}
+
+#footer .widget-link {
+  color: #b1b1b1;
 }
 
 #bottom {
