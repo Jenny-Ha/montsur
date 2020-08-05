@@ -29,6 +29,17 @@ $accentbtn: #1c63b8;
 .bold-700 {
     font-weight: 700;
 }
+.bold-600 {
+    font-weight: 600;
+}
+.text-right {
+    text-align: right;
+}
+
+/* BODY */
+body {
+    color: #555;
+}
 /* BOTONS FIXED */
 #btn_brochure {
     width: 36px;
@@ -87,6 +98,57 @@ $accentbtn: #1c63b8;
         }
     }
 }
+
+/* NOSOTROS */
+.row-nosotros {
+    .wprt-tabs {
+
+    }
+    .tab-title  {
+        text-align: center;
+        border-color: transparent;
+        .item-title {
+            color: #777;
+            > span {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .tab-nosotros {
+        .wrap-logo {
+            margin-bottom: 25px;
+            img {
+                max-width: 300px;
+            }
+        }
+        p {
+            padding: 0 20px;
+            //change mobile
+        }
+        .wrap-img {
+            img {
+                margin-top: 20px;
+                max-width: 450px;
+            }
+        }
+    }
+    .tab-valores {
+        .item-content {
+            // padding-left: 30px; 
+            //change media in mobile
+        }
+        .wrap-img {
+            // padding-top: 15px;
+            text-align: center;
+            img {
+                max-width: 400px;
+            }
+        }
+    }
+}
+
+
 /* CERTIFIED */
 .row-certified-1 {
     background: url(/assets/img/montsur/bg_respaldo.png) center center;
