@@ -51,9 +51,32 @@ body {
     color: #555;
 }
 /* BOTONS FIXED */
+.btn-fixed {
+    width: 44px;
+    a {
+        display: block;
+        padding: 5px;
+        span {
+            display: block;
+            text-align: center;
+            line-height: 1;
+            &.icon {
+                line-height: 0;
+                font-size: 25px;
+            }
+            &.text {
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 8px;
+                margin-top: 2px;
+            }
+            &.large {
+                font-size: 8px;
+            }
+        }
+    }
+}
 #btn_brochure {
-    width: 36px;
-    height: 49px;
     display: block;
     position: fixed;
     top: 377px;
@@ -61,16 +84,11 @@ body {
     z-index: 999;
     border-radius: 6px 0 0 6px;
     box-shadow: -2px 2px 4px rgba(0, 0, 0, .45);
-    background: url(assets/img/montsur/icono_brochure.png) no-repeat center;
-    a {
-        width: 37px;
-        height: 49px;
-        display: block;
+    .wprt-button:hover {
+        background-color: lighten($accentbtn, 10%) !important;
     }
 }
-#btn_certificados {
-    width: 36px;
-    height: 49px;
+#btn_whatsapp {
     display: block;
     position: fixed;
     top: 320px;
@@ -78,11 +96,10 @@ body {
     z-index: 999;
     border-radius: 6px 0 0 6px;
     box-shadow: -2px 2px 4px rgba(0, 0, 0, .45);
-    background: url(assets/img/montsur/icono_certificados.png) no-repeat center;
-    a {
-        width: 37px;
-        height: 49px;
-        display: block;
+   // background: url(assets/img/montsur/icono_certificados.png) no-repeat center;
+    
+    .wprt-button:hover {
+        background-color: #52a920!important;
     }
 }
 /* HEADER*/
