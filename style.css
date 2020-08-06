@@ -41445,7 +41445,7 @@ body {
 
 .row-nosotros .tab-nosotros .wrap-img img {
   margin-top: 20px;
-  max-width: 450px;
+  max-width: 75%;
 }
 
 .row-nosotros .tab-valores .wrap-img {
@@ -41548,7 +41548,7 @@ body {
 
 .row-contact .wpcf7-form .form-control-wrap label {
   font-weight: 600;
-  color: #777;
+  color: #999;
   padding-left: 22px;
 }
 
@@ -41558,8 +41558,30 @@ body {
   color: rgba(28, 99, 184, 0.7);
 }
 
+.row-contact .wpcf7-form .form-control-wrap .wpcf7-form-control {
+  color: #666;
+  font-weight: 500;
+}
+
+.row-contact .wpcf7-form .form-control-wrap .wpcf7-form-control::-webkit-input-placeholder {
+  color: #a5a4a7;
+}
+
+.row-contact .wpcf7-form .form-control-wrap .wpcf7-form-control:-ms-input-placeholder {
+  color: #a5a4a7;
+}
+
+.row-contact .wpcf7-form .form-control-wrap .wpcf7-form-control::-ms-input-placeholder {
+  color: #a5a4a7;
+}
+
+.row-contact .wpcf7-form .form-control-wrap .wpcf7-form-control::placeholder {
+  color: #a5a4a7;
+}
+
 .row-contact .wpcf7-form .wrap-submit {
   text-align: center;
+  margin-top: 20px;
 }
 
 .row-contact .wpcf7-form input[type="submit"] {
