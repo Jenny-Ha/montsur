@@ -41645,12 +41645,12 @@ body {
   margin-bottom: 0px;
 }
 
-#footer .widget_information {
-  margin-top: 30px;
+#footer .widget-title {
+  margin-bottom: 20px !important;
 }
 
-#footer .widget-title {
-  padding-left: 28px;
+#footer .widget-title > span:after {
+  background-color: #a5a4a7 !important;
 }
 
 #footer .wprt-list.style-2.icon-top {
@@ -41663,6 +41663,8 @@ body {
 
 #footer .wprt-list.style-2.icon-top .icon > i {
   font-size: 16px;
+  color: whitesmoke;
+  opacity: 0.8;
 }
 
 #footer .wprt-list.style-2.icon-top .icon .rt-icon-facebook {
