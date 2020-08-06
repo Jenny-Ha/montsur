@@ -41481,6 +41481,36 @@ body {
   padding: 25px 30px;
 }
 
+/* CONTACT*/
+.row-contact .wpcf7-form {
+  margin-top: 20px;
+}
+
+.row-contact .wpcf7-form .form-control-wrap {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.row-contact .wpcf7-form .form-control-wrap label {
+  font-weight: 600;
+  color: #777;
+  padding-left: 22px;
+}
+
+.row-contact .wpcf7-form .form-control-wrap label.error {
+  top: 5px;
+  font-size: 11px;
+  color: rgba(28, 99, 184, 0.7);
+}
+
+.row-contact .wpcf7-form .wrap-submit {
+  text-align: center;
+}
+
+.row-contact .wpcf7-form input[type="submit"] {
+  background-color: #1c63b8;
+}
+
 /* FOOTER */
 #footer {
   padding: 70px 0 35px;

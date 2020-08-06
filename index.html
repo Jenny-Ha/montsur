@@ -1001,7 +1001,7 @@
                         <!-- END PARTNERS -->
 
                         <!-- CONTACT -->
-                        <div id="contacto" class=" ">
+                        <div id="contacto" class="row-contact">
                             <div class="wprt-spacer clearfix" data-desktop="80" data-mobi="50" data-smobi="50"></div>
 
                             <div class="container max-container">
@@ -1010,8 +1010,7 @@
                                         <h2 class="heading clearfix">CONTÁCTANOS</h2>
                                         <div class="sep clearfix"></div>
                                         <p class="sub-heading clearfix">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab nihil necessitatibus dolorem nulla. Odio quidem in assumenda sit ducimus rem nisi, mollitia dicta similique nemo atque iure quae sunt voluptates!
-                                            <br>
+                                            Ofrecemos puntualidad en los servicios, alta calidad en los materiales asi como precios competitivos.
                                             <br>
                                             <br>
                                         </p>
@@ -1023,23 +1022,42 @@
 
                                         <div class="wprt-spacer clearfix" data-desktop="80" data-mobi="50" data-smobi="50"></div>
                                     </div><!-- /.col-md-6 -->
+
+                                    <!-- Form Contact -->
                                     <div class="col-md-6">
-                                        <div class="wprt-contact-form">
+                                        <!-- <div class="wprt-contact-form"> -->
+                                        <div class="wprt-appointment-form">
+                                            <div class="wprt-divider has-icon height-1px">
+                                                <div class="divider-icon">
+                                                    <span class="divider-icon-before divider-center divider-double"></span>
+                                                    <h2 class="title">Sus datos</h2>
+                                                    <span class="divider-icon-after divider-center divider-double"></span>
+                                                </div>
+                                            </div>
                                             <form action="http://rollthemes.com/html5/autoservice/includes/contact/contact-process.php" method="post" class="contact-form wpcf7-form">
                                                 <span class="form-control-wrap your-name">
-                                                    <input type="text" tabindex="1" id="name" name="name" value="" class="wpcf7-form-control" placeholder="Name *" required>
+                                                    <label>Su nombre</label>
+                                                    <input type="text" tabindex="1" id="name" name="name" value="" class="wpcf7-form-control" placeholder="Nombre completo *" required>
                                                 </span>
+                                                <span class="form-control-wrap your-company">
+                                                    <label>El nombre de su empresa (No es obligatorio)</label>
+                                                    <input type="text" tabindex="2" id="company" name="company" value="" class="wpcf7-form-control" placeholder="Nombre de empresa">
+                                                </span>
+                                                
                                                 <span class="form-control-wrap your-email">
-                                                    <input type="email" tabindex="2" id="email" name="email" value="" class="wpcf7-form-control" placeholder="E-mail *" required>
+                                                    <label>Su correo electrónico</label>
+                                                    <input type="email" tabindex="3" id="email" name="email" value="" class="wpcf7-form-control" placeholder="Correo electrónico *" required>
                                                 </span>
                                                 <span class="form-control-wrap your-subject">
-                                                    <input type="text" tabindex="4" id="subject" name="subject" value="" class="wpcf7-form-control" placeholder="Subject *" required>
+                                                    <label>Su número de teléfono</label>
+                                                    <input type="text" tabindex="4" id="telephone" name="telephone" value="" class="wpcf7-form-control" placeholder="Teléfono *" required>
                                                 </span>
                                                 <span class="form-control-wrap your-message">
-                                                    <textarea name="message" tabindex="5" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" placeholder="Message *" required></textarea>
+                                                    <label>Detalle de lo que necesita</label>
+                                                    <textarea name="message" tabindex="5" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" placeholder="Aquí el detalle de su consulta *" required></textarea>
                                                 </span>
                                                 <div class="wrap-submit">
-                                                    <input type="submit" value="SEND MESSAGE" class="submit wpcf7-form-control wpcf7-submit" id="submit" name="submit">
+                                                    <input type="submit" value="ENVIAR" class="submit wpcf7-form-control wpcf7-submit" id="submit" name="submit">
                                                 </div>
                                             </form>
                                         </div><!-- /.wprt-contact-form -->

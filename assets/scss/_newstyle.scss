@@ -254,6 +254,32 @@ body {
     }   
 }  
 
+/* CONTACT*/
+.row-contact{
+    .wpcf7-form {
+       margin-top: 20px;
+        .form-control-wrap {
+            width: 100%;
+            margin-bottom: 10px;
+            label {
+                font-weight: 600;
+                color: #777;
+                padding-left: 22px;
+                &.error {
+                    top: 5px;
+                    font-size: 11px;
+                    color: rgba($text-primary, 0.7)
+                }
+            }
+        }
+        .wrap-submit{
+            text-align: center;
+        }
+        input[type="submit"] {
+            background-color: $accentbtn;
+        }
+    }
+}
 /* FOOTER */
 #footer {
     padding: 70px 0 35px;
