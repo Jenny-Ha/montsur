@@ -41255,10 +41255,6 @@ body.page #main-content {
 ----------MONTSUR STYLES----------
 BY: Jenny Ha
 */
-* {
-  outline: 1px solid rgba(173, 255, 47, 0.5) !important;
-}
-
 /* GENERAL */
 .max-container {
   max-width: 1000px;
@@ -41371,22 +41367,53 @@ body {
   color: #1c63b8;
 }
 
+#rev-slider2 .desc {
+  margin: 30px auto 20px auto;
+  max-width: 1000px !important;
+  font-size: 16px;
+  padding: 10px 0px;
+  line-height: 1.75;
+}
+
+@media only screen and (max-width: 749px) {
+  #rev-slider2 .desc {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+}
+
+#rev-slider2 .wrap-btn {
+  line-height: 1.75;
+  padding: 15px 0px;
+}
+
 #rev-slider2 .wprt-button.outline {
   border: 1px solid white;
   color: white;
-  margin: 0px 5px;
+  margin: 5px 5px;
 }
 
 #rev-slider2 .wprt-button.outline:hover {
   border-color: #1c63b8;
 }
 
-#rev-slider2 .wrap-respaldo {
+@media only screen and (max-width: 991px) {
+  #rev-slider2 .wprt-button.outline {
+    padding: 5px 15px !important;
+    font-size: 12px;
+  }
+}
+
+#rev-slider2 .logo-respaldo {
+  height: auto !important;
+  width: 150px !important;
   margin-top: 20px;
 }
 
-#rev-slider2 .wrap-respaldo > img {
-  height: 50px;
+@media only screen and (min-width: 992px) {
+  #rev-slider2 .logo-respaldo {
+    margin-top: 60px;
+  }
 }
 
 /* NOSOTROS */

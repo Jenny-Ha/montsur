@@ -21,7 +21,7 @@ $text-whiteaccent: $whiteaccent;
 
 // Contenedores
 * {
-    outline: 1px solid rgba(greenyellow, 0.5) !important;
+    //outline: 1px solid rgba(greenyellow, 0.5) !important;
 }
 /* GENERAL */
 .max-container {
@@ -124,18 +124,44 @@ body {
     //text-shadow: 1px 1px whitesmoke;
 }
 #rev-slider2 {
+    .desc {
+        margin: 30px auto 20px auto;
+        max-width: 1000px !important;
+        font-size: 16px;
+        padding: 10px 0px;
+        line-height: 1.75;
+        @media only screen and (max-width: 749px) {
+            font-size: 12px;
+            margin-bottom: 0px;
+        }
+
+        @media only screen and (max-width: 991px) {
+            
+         }
+    }
+    .wrap-btn{
+        line-height: 1.75;
+        padding: 15px 0px;
+    }
     .wprt-button.outline {
         border: 1px solid white;
         color:white;
-        margin: 0px 5px;
+        margin: 5px 5px;
         &:hover {
             border-color: $accentbtn;
         }
+
+        @media only screen and (max-width: 991px) {
+            padding: 5px 15px !important;
+            font-size: 12px;
+         }
     }
-    .wrap-respaldo {
+    .logo-respaldo {
+        height: auto !important;
+        width: 150px !important;
         margin-top: 20px;
-        >img {
-            height: 50px;
+        @media only screen and (min-width: 992px) {
+            margin-top: 60px;
         }
     }
 }
