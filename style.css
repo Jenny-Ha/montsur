@@ -41369,14 +41369,14 @@ body {
 
 #rev-slider2 .slotholder::before {
   position: absolute;
-  background-color: #000;
+  background-color: #111;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   content: '';
-  opacity: 0.4;
+  opacity: 0.45;
   z-index: 50;
 }
 
@@ -41540,6 +41540,28 @@ body {
   background-color: #1c63b8 !important;
   color: #fff !important;
   border-color: #1c63b8 !important;
+}
+
+.container-icon-services .wprt-icon-box .img-ico {
+  display: block;
+  height: 50px;
+  margin: 25px auto;
+}
+
+.mfp-arrow-left:after,
+.mfp-arrow-left .mfp-a {
+  font-family: "wprticons";
+  content: "\e942";
+  font-size: 16px;
+  margin-left: 6px;
+}
+
+.mfp-arrow-right:after,
+.mfp-arrow-right .mfp-a {
+  font-family: "wprticons";
+  content: "\e943";
+  font-size: 16px;
+  margin-left: 8px;
 }
 
 /* PARTNER*/
