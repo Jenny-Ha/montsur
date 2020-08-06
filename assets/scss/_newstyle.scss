@@ -178,6 +178,17 @@ body {
         }
     }
 }
+/* PARTNER*/
+.wprt-partner.has-shadow{
+    .partner-item {
+        .inner{
+            box-shadow: 1px 1px 0px 0px #dbdbdb;
+        }
+        .thumb { 
+            background-color: #f7f7f7; padding: 25px 30px; 
+        }
+    }   
+}  
 
 /* FOOTER */
 #footer {

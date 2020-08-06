@@ -41416,6 +41416,17 @@ body {
   font-size: 130%;
 }
 
+/* PARTNER*/
+.wprt-partner.has-shadow .partner-item .inner {
+  -webkit-box-shadow: 1px 1px 0px 0px #dbdbdb;
+          box-shadow: 1px 1px 0px 0px #dbdbdb;
+}
+
+.wprt-partner.has-shadow .partner-item .thumb {
+  background-color: #f7f7f7;
+  padding: 25px 30px;
+}
+
 /* FOOTER */
 #footer {
   padding: 70px 0 35px;
