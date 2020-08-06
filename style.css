@@ -41356,6 +41356,12 @@ body {
 }
 
 /* HEADER*/
+@media only screen and (min-width: 992px) {
+  #site-header .wprt-container {
+    max-width: 1000px;
+  }
+}
+
 #site-logo-inner img {
   height: 52px;
 }
