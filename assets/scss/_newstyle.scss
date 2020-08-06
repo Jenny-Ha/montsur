@@ -140,6 +140,7 @@ body {
         }
         p {
             padding: 0 20px;
+            font-size: 15px;
             //change mobile
         }
         .wrap-img {
@@ -278,6 +279,11 @@ body {
         input[type="submit"] {
             background-color: $accentbtn;
         }
+    }
+
+    .map-iframe {
+        width: 100%;
+        margin-bottom: 0;
     }
 }
 /* FOOTER */

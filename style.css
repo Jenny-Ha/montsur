@@ -41386,6 +41386,7 @@ body {
 
 .row-nosotros .tab-nosotros p {
   padding: 0 20px;
+  font-size: 15px;
 }
 
 .row-nosotros .tab-nosotros .wrap-img img {
@@ -41509,6 +41510,11 @@ body {
 
 .row-contact .wpcf7-form input[type="submit"] {
   background-color: #1c63b8;
+}
+
+.row-contact .map-iframe {
+  width: 100%;
+  margin-bottom: 0;
 }
 
 /* FOOTER */
