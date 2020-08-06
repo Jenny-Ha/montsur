@@ -41284,7 +41284,7 @@ BY: Jenny Ha
   margin-top: 20px;
 }
 
-/* BODY */
+/* HTML-BODY */
 body {
   color: #555;
 }
@@ -41505,19 +41505,19 @@ body {
 }
 
 /* SERVICIOS */
-.row-services.bg-accent .wprt-headings .heading {
+.row-services .bg-accent .wprt-headings .heading {
   color: white;
 }
 
-.row-services.bg-accent .wprt-headings .sub-heading {
+.row-services .bg-accent .wprt-headings .sub-heading {
   color: #f0f0f0;
 }
 
-.row-services.bg-accent .wprt-icon-box .heading {
+.row-services .bg-accent .wprt-icon-box .heading {
   color: white;
 }
 
-.row-services.bg-accent .wprt-icon-box .desc {
+.row-services .bg-accent .wprt-icon-box .desc {
   color: #f0f0f0;
 }
 

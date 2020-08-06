@@ -46,7 +46,10 @@ $text-whiteaccent: $whiteaccent;
     margin-top: 20px;
 }
 
-/* BODY */
+/* HTML-BODY */
+html {
+    // scroll-behavior: smooth;
+}
 body {
     color: #555;
 }
@@ -265,7 +268,7 @@ body {
 }
  /* SERVICIOS */
  .row-services {
-     &.bg-accent {
+    .bg-accent {
         .wprt-headings {
             .heading {
                 color: white;

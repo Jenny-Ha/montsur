@@ -54,6 +54,12 @@
                 // Scroll to Top
                 self.scrollToTop();
 
+                // Scroll to Section
+                self.scrollToSection();
+
+                // Scroll Section active
+                self.scrollSectionActive();
+
                 // Spacer
                 self.widgetSpacer();
 
@@ -263,6 +269,58 @@
                 $('html, body').animate({ scrollTop: 0 }, 1000 , 'easeInOutExpo');
             return false;
             });
+        },
+        
+        // Scroll to Section
+        scrollToSection: function() {            
+            $(".to-section").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                    event.preventDefault();
+    
+                    // Store hash
+                    var hash = this.hash;
+                    var padreSuperior=$(this).closest('li');
+    
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1000, function(){    
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                    $('.menu-item').removeClass('current-menu-item');
+                    $(padreSuperior).addClass('current-menu-item');
+                }  // End if loop
+            });
+
+        },
+
+        // Scroll and add nav item active
+        scrollSectionActive: function() {          
+
+            $(window).scroll(function() {
+                var scrollDistance = $(window).scrollTop();
+                // console.log(scrollDistance)
+        
+                // Show/hide menu on scroll
+                //if (scrollDistance >= 850) {
+                //		$('nav').fadeIn("fast");
+                //} else {
+                //		$('nav').fadeOut("fast");
+                //}
+            
+                // Assign active class to nav links while scolling
+                $('.section-pg').each(function(i) {
+                    if ($(this).position().top < scrollDistance + 74 ) {
+                            $('.menu-item').removeClass('current-menu-item');
+                            $('.menu-item').eq(i).addClass('current-menu-item');
+                    }
+                });
+            }).scroll();
         },
 
         // Featured Media
