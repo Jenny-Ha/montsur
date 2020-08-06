@@ -41264,6 +41264,10 @@ BY: Jenny Ha
   max-width: 1000px;
 }
 
+.bg-light-grey {
+  background-color: #f4f4f4;
+}
+
 .text-white {
   color: whitesmoke;
 }
@@ -41278,6 +41282,10 @@ BY: Jenny Ha
 
 .text-right {
   text-align: right;
+}
+
+.wprt-headings.style-1 .sub-heading {
+  margin-top: 20px;
 }
 
 /* BODY */
@@ -41344,6 +41352,14 @@ body {
 
 #rev-slider2 .wprt-button.outline:hover {
   border-color: #1c63b8;
+}
+
+#rev-slider2 .wrap-respaldo {
+  margin-top: 20px;
+}
+
+#rev-slider2 .wrap-respaldo > img {
+  height: 50px;
 }
 
 /* NOSOTROS */
@@ -41416,6 +41432,44 @@ body {
   font-size: 130%;
 }
 
+/* SERVICIOS */
+.row-services.bg-accent .wprt-headings .heading {
+  color: white;
+}
+
+.row-services.bg-accent .wprt-headings .sub-heading {
+  color: #f0f0f0;
+}
+
+.row-services.bg-accent .wprt-icon-box .heading {
+  color: white;
+}
+
+.row-services.bg-accent .wprt-icon-box .desc {
+  color: #f0f0f0;
+}
+
+.container-icon-services .wprt-icon-box .heading {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.container-icon-services .wprt-icon-box .heading a {
+  display: block;
+  color: #1c63b8;
+}
+
+.container-icon-services .wprt-icon-box .heading a:hover {
+  color: rgba(28, 99, 184, 0.78);
+}
+
+.container-icon-services .wprt-icon-box .icon-wrap {
+  background-color: #1c63b8 !important;
+  color: #fff !important;
+  border-color: #1c63b8 !important;
+}
+
 /* PARTNER*/
 .wprt-partner.has-shadow .partner-item .inner {
   -webkit-box-shadow: 1px 1px 0px 0px #dbdbdb;
@@ -41423,7 +41477,7 @@ body {
 }
 
 .wprt-partner.has-shadow .partner-item .thumb {
-  background-color: #f7f7f7;
+  background-color: #fefefe;
   padding: 25px 30px;
 }
 

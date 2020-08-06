@@ -12,9 +12,12 @@ $grisdark:#3a3a3c;
 $grismiddle:#4b4b4d;
 $grislight:#a5a4a7;
 
+$whiteaccent: #f0f0f0;
+
 $accentbtn: #1c63b8;
 // $text-primary:$bluemiddle;
 $text-primary:$accentbtn;
+$text-whiteaccent: $whiteaccent;
 
 // Contenedores
 * {
@@ -23,6 +26,9 @@ $text-primary:$accentbtn;
 /* GENERAL */
 .max-container {
     max-width: 1000px;
+}
+.bg-light-grey {
+    background-color: #f4f4f4;
 }
 .text-white {
     color: whitesmoke;
@@ -35,6 +41,9 @@ $text-primary:$accentbtn;
 }
 .text-right {
     text-align: right;
+}
+.wprt-headings.style-1 .sub-heading {
+    margin-top: 20px;
 }
 
 /* BODY */
@@ -96,6 +105,12 @@ body {
         margin: 0px 5px;
         &:hover {
             border-color: $accentbtn;
+        }
+    }
+    .wrap-respaldo {
+        margin-top: 20px;
+        >img {
+            height: 50px;
         }
     }
 }
@@ -178,6 +193,55 @@ body {
         }
     }
 }
+ /* SERVICIOS */
+ .row-services {
+     &.bg-accent {
+        .wprt-headings {
+            .heading {
+                color: white;
+            }
+            .sub-heading {
+                color: $text-whiteaccent;
+            }
+        }
+        .wprt-icon-box{
+            .heading {
+                color: white;
+            }
+            .desc {
+                color: $text-whiteaccent;
+            }
+        }
+     } // Bbg-accent
+
+ }
+ 
+ .container-icon-services {
+    .wprt-icon-box {
+
+        .heading {
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            a {
+                display: block;
+                color: $text-primary;
+            &:hover {
+                color: rgba($text-primary, 0.78);
+            }
+            }
+        }
+        .icon-wrap {
+            background-color: #1c63b8 !important;
+            color: #fff !important;
+            border-color: #1c63b8 !important;
+        }
+        .wprt-button {
+
+        }
+    }
+ }
+
 /* PARTNER*/
 .wprt-partner.has-shadow{
     .partner-item {
@@ -185,7 +249,7 @@ body {
             box-shadow: 1px 1px 0px 0px #dbdbdb;
         }
         .thumb { 
-            background-color: #f7f7f7; padding: 25px 30px; 
+            background-color: #fefefe; padding: 25px 30px; 
         }
     }   
 }  
