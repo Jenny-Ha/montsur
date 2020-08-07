@@ -191,7 +191,23 @@ body {
 
     // Arrows
     .tparrows.custom {
-        // background-color: rgba(0, 0, 0, 0.45);
+        background-color: transparent;
+        &:hover{
+            background: transparent;
+            &::before{
+                opacity: 1;
+            }
+        }
+        &.tp-leftarrow{
+            &:before {
+                font-size: 25px;
+            }
+        }
+        &.tp-rightarrow{
+            &:before {
+                font-size: 25px;
+            }
+        }
     }
 }
 

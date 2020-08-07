@@ -41437,6 +41437,26 @@ body {
   }
 }
 
+#rev-slider2 .tparrows.custom {
+  background-color: transparent;
+}
+
+#rev-slider2 .tparrows.custom:hover {
+  background: transparent;
+}
+
+#rev-slider2 .tparrows.custom:hover::before {
+  opacity: 1;
+}
+
+#rev-slider2 .tparrows.custom.tp-leftarrow:before {
+  font-size: 25px;
+}
+
+#rev-slider2 .tparrows.custom.tp-rightarrow:before {
+  font-size: 25px;
+}
+
 /* NOSOTROS */
 .row-nosotros .tab-title {
   text-align: center;
