@@ -42,6 +42,9 @@ $text-whiteaccent: $whiteaccent;
 .text-right {
     text-align: right;
 }
+.text-justify {
+    text-align: justify;
+}
 .wprt-headings.style-1 .sub-heading {
     margin-top: 20px;
 }
@@ -223,9 +226,11 @@ body {
         }
     }
     .tab-valores {
-        .item-content {
-            // padding-left: 30px; 
-            //change media in mobile
+        .wprt-list {
+            .text {
+                display: inline-block;
+                text-align: justify;
+            }
         }
         .wrap-img {
             // padding-top: 15px;

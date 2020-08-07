@@ -41280,6 +41280,10 @@ BY: Jenny Ha
   text-align: right;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .wprt-headings.style-1 .sub-heading {
   margin-top: 20px;
 }
@@ -41463,6 +41467,11 @@ body {
 .row-nosotros .tab-nosotros .wrap-img img {
   margin-top: 20px;
   max-width: 75%;
+}
+
+.row-nosotros .tab-valores .wprt-list .text {
+  display: inline-block;
+  text-align: justify;
 }
 
 .row-nosotros .tab-valores .wrap-img {
