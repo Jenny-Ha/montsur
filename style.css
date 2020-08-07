@@ -41255,6 +41255,10 @@ body.page #main-content {
 ----------MONTSUR STYLES----------
 BY: Jenny Ha
 */
+* {
+  font-display: block;
+}
+
 /* GENERAL */
 .max-container {
   max-width: 1000px;
