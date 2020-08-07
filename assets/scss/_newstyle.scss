@@ -85,7 +85,7 @@ body {
 #btn_brochure {
     display: block;
     position: fixed;
-    top: 377px;
+    bottom: 130px;
     right: 0;
     z-index: 999;
     border-radius: 6px 0 0 6px;
@@ -97,7 +97,7 @@ body {
 #btn_whatsapp {
     display: block;
     position: fixed;
-    top: 320px;
+    bottom: 187px;
     right: 0;
     z-index: 999;
     border-radius: 6px 0 0 6px;
@@ -187,6 +187,11 @@ body {
         @media only screen and (min-width: 992px) {
             margin-top: 60px;
         }
+    }
+
+    // Arrows
+    .tparrows.custom {
+        // background-color: rgba(0, 0, 0, 0.45);
     }
 }
 
