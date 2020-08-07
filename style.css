@@ -41280,6 +41280,10 @@ BY: Jenny Ha
   text-align: right;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .wprt-headings.style-1 .sub-heading {
   margin-top: 20px;
 }
@@ -41324,7 +41328,7 @@ body {
 #btn_brochure {
   display: block;
   position: fixed;
-  top: 377px;
+  bottom: 130px;
   right: 0;
   z-index: 999;
   border-radius: 6px 0 0 6px;
@@ -41339,7 +41343,7 @@ body {
 #btn_whatsapp {
   display: block;
   position: fixed;
-  top: 320px;
+  bottom: 187px;
   right: 0;
   z-index: 999;
   border-radius: 6px 0 0 6px;
@@ -41433,6 +41437,26 @@ body {
   }
 }
 
+#rev-slider2 .tparrows.custom {
+  background-color: transparent;
+}
+
+#rev-slider2 .tparrows.custom:hover {
+  background: transparent;
+}
+
+#rev-slider2 .tparrows.custom:hover::before {
+  opacity: 1;
+}
+
+#rev-slider2 .tparrows.custom.tp-leftarrow:before {
+  font-size: 25px;
+}
+
+#rev-slider2 .tparrows.custom.tp-rightarrow:before {
+  font-size: 25px;
+}
+
 /* NOSOTROS */
 .row-nosotros .tab-title {
   text-align: center;
@@ -41463,6 +41487,11 @@ body {
 .row-nosotros .tab-nosotros .wrap-img img {
   margin-top: 20px;
   max-width: 75%;
+}
+
+.row-nosotros .tab-valores .wprt-list .text {
+  display: inline-block;
+  text-align: justify;
 }
 
 .row-nosotros .tab-valores .wrap-img {

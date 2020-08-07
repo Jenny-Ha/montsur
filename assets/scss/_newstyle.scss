@@ -42,6 +42,9 @@ $text-whiteaccent: $whiteaccent;
 .text-right {
     text-align: right;
 }
+.text-justify {
+    text-align: justify;
+}
 .wprt-headings.style-1 .sub-heading {
     margin-top: 20px;
 }
@@ -82,7 +85,7 @@ body {
 #btn_brochure {
     display: block;
     position: fixed;
-    top: 377px;
+    bottom: 130px;
     right: 0;
     z-index: 999;
     border-radius: 6px 0 0 6px;
@@ -94,7 +97,7 @@ body {
 #btn_whatsapp {
     display: block;
     position: fixed;
-    top: 320px;
+    bottom: 187px;
     right: 0;
     z-index: 999;
     border-radius: 6px 0 0 6px;
@@ -185,6 +188,27 @@ body {
             margin-top: 60px;
         }
     }
+
+    // Arrows
+    .tparrows.custom {
+        background-color: transparent;
+        &:hover{
+            background: transparent;
+            &::before{
+                opacity: 1;
+            }
+        }
+        &.tp-leftarrow{
+            &:before {
+                font-size: 25px;
+            }
+        }
+        &.tp-rightarrow{
+            &:before {
+                font-size: 25px;
+            }
+        }
+    }
 }
 
 /* NOSOTROS */
@@ -223,9 +247,11 @@ body {
         }
     }
     .tab-valores {
-        .item-content {
-            // padding-left: 30px; 
-            //change media in mobile
+        .wprt-list {
+            .text {
+                display: inline-block;
+                text-align: justify;
+            }
         }
         .wrap-img {
             // padding-top: 15px;
