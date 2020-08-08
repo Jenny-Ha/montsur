@@ -58,7 +58,7 @@
                 self.scrollToSection();
 
                 // Scroll Section active
-                self.scrollSectionActive();
+                //self.scrollSectionActive();
 
                 // Spacer
                 self.widgetSpacer();

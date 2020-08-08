@@ -41493,6 +41493,18 @@ body {
   max-width: 75%;
 }
 
+.row-nosotros .tab-valores .wprt-list .icon {
+  background: #1c63b8;
+  line-height: 1;
+  padding: 3px;
+  top: 7px !important;
+}
+
+.row-nosotros .tab-valores .wprt-list .icon > i {
+  color: white !important;
+  font-size: 12px;
+}
+
 .row-nosotros .tab-valores .wprt-list .text {
   display: inline-block;
   text-align: justify;
