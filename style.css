@@ -41738,4 +41738,14 @@ body {
         margin: 0px -15px;
     } */
 }
+
+/* MODAL BROCHURE */
+.mfp-iframe {
+  background: white !important;
+  padding: 10px;
+}
+
+.mfp-bg {
+  opacity: 0.75;
+}
 /*# sourceMappingURL=style.css.map */
