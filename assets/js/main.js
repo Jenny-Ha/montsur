@@ -60,6 +60,9 @@
                 // Scroll Section active
                 //self.scrollSectionActive();
 
+                // Modal brochure
+                self.showBrochure();
+
                 // Spacer
                 self.widgetSpacer();
 
@@ -297,6 +300,22 @@
                 }  // End if loop
             });
 
+        },
+
+        // Show pdf brochure
+        
+        showBrochure: function(){
+            $('#open-brochure').magnificPopup({
+                type:'iframe',
+                //mainClass: 'modal-iframe',
+                iframe: {
+                    markup: '<div class="mfp-iframe-scaler">'+
+                                '<div class="mfp-close"></div>'+
+                                '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+                            '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+                }
+    
+            });
         },
 
         // Scroll and add nav item active
