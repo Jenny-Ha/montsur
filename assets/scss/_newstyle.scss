@@ -249,9 +249,21 @@ body {
     }
     .tab-valores {
         .wprt-list {
+            .icon {
+                background: $accentbtn;
+                line-height: 1;
+                padding: 3px;
+                top: 7px !important;
+                >i {
+                    color: white !important;
+                    font-size: 12px;
+                }
+            }
             .text {
+                // Requisito: Justificado
                 display: inline-block;
                 text-align: justify;
+
             }
         }
         .wrap-img {
