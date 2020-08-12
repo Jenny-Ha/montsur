@@ -41292,6 +41292,11 @@ BY: Jenny Ha
   margin-top: 20px;
 }
 
+.wprt-headings.style-1 .sep {
+  height: 5px;
+  border-radius: 3px;
+}
+
 /* HTML-BODY */
 body {
   color: #555;
@@ -41369,6 +41374,10 @@ body {
   #site-header .wprt-container {
     max-width: 1000px;
   }
+}
+
+#site-header.is-fixed {
+  z-index: 999;
 }
 
 #site-logo-inner img {

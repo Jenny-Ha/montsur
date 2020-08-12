@@ -49,7 +49,10 @@ $text-whiteaccent: $whiteaccent;
 .wprt-headings.style-1 .sub-heading {
     margin-top: 20px;
 }
-
+.wprt-headings.style-1 .sep{
+    height: 5px;
+    border-radius: 3px;
+}
 /* HTML-BODY */
 html {
     // scroll-behavior: smooth;
@@ -116,12 +119,16 @@ body {
     }
 }
 /* HEADER*/
+
 #site-header {
     .wprt-container {
         @media only screen and (min-width: 992px) {
             max-width: 1000px;
         }
 
+    }
+    &.is-fixed { //Evitar solapar modal
+        z-index: 999;
     }
 }
 #site-logo-inner{
