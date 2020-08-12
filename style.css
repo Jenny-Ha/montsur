@@ -41256,6 +41256,7 @@ body.page #main-content {
 BY: Jenny Ha
 */
 * {
+  outline: 1px solid rgba(173, 255, 47, 0.5) !important;
   font-display: block;
 }
 
@@ -41288,6 +41289,22 @@ BY: Jenny Ha
   text-align: justify;
 }
 
+ul.list-with-icon {
+  list-style-type: none;
+}
+
+ul.list-with-icon > li {
+  padding-left: 10px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+ul.list-with-icon > li .icon {
+  position: absolute;
+  left: -16px;
+}
+
+/* Fixing Style */
 .wprt-headings.style-1 .sub-heading {
   margin-top: 20px;
 }
@@ -41630,6 +41647,22 @@ body {
 }
 
 /* CONTACT*/
+.row-contact {
+  /* Tabs*/
+  /* Form */
+}
+
+.row-contact .wprt-tabs .tab-title {
+  text-align: center;
+}
+
+.row-contact .tab-content-wrap {
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 1px solid #dbdbdb;
+  border-top: none;
+}
+
 .row-contact .wpcf7-form {
   margin-top: 20px;
 }
@@ -41654,22 +41687,24 @@ body {
 .row-contact .wpcf7-form .form-control-wrap .wpcf7-form-control {
   color: #666;
   font-weight: 500;
+  background-color: white;
+  border-color: #1c63b8;
 }
 
 .row-contact .wpcf7-form .form-control-wrap .wpcf7-form-control::-webkit-input-placeholder {
-  color: #a5a4a7;
+  color: #8b8a8e;
 }
 
 .row-contact .wpcf7-form .form-control-wrap .wpcf7-form-control:-ms-input-placeholder {
-  color: #a5a4a7;
+  color: #8b8a8e;
 }
 
 .row-contact .wpcf7-form .form-control-wrap .wpcf7-form-control::-ms-input-placeholder {
-  color: #a5a4a7;
+  color: #8b8a8e;
 }
 
 .row-contact .wpcf7-form .form-control-wrap .wpcf7-form-control::placeholder {
-  color: #a5a4a7;
+  color: #8b8a8e;
 }
 
 .row-contact .wpcf7-form .wrap-submit {
@@ -41682,8 +41717,9 @@ body {
 }
 
 .row-contact .map-iframe {
-  width: 100%;
+  width: 95%;
   margin-bottom: 0;
+  height: 250px;
 }
 
 /* FOOTER */
@@ -41919,19 +41955,8 @@ body {
   width: 100%;
 }
 
-.list-services {
-  list-style-type: none;
-}
-
-.list-services > li {
-  padding-left: 10px;
-  margin-bottom: 5px;
-  position: relative;
-}
-
-.list-services > li span.icon {
-  position: absolute;
-  left: -16px;
+.list-services .icon {
+  top: 2px;
 }
 
 /* Contacto*/

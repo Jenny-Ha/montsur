@@ -21,7 +21,7 @@ $text-whiteaccent: $whiteaccent;
 
 // Contenedores
 * {
-    //outline: 1px solid rgba(greenyellow, 0.5) !important;
+    outline: 1px solid rgba(greenyellow, 0.5) !important;
     font-display: block;
 }
 /* GENERAL */
@@ -46,6 +46,20 @@ $text-whiteaccent: $whiteaccent;
 .text-justify {
     text-align: justify;
 }
+ul.list-with-icon {
+    list-style-type: none;
+    >li {
+        padding-left: 10px;
+        margin-bottom: 5px;
+        position: relative;
+        
+        .icon{ // span wrap <i>
+            position: absolute;
+            left: -16px;
+        }
+    }
+}
+/* Fixing Style */
 .wprt-headings.style-1 .sub-heading {
     margin-top: 20px;
 }
@@ -53,6 +67,8 @@ $text-whiteaccent: $whiteaccent;
     height: 5px;
     border-radius: 3px;
 }
+
+
 /* HTML-BODY */
 html {
     // scroll-behavior: smooth;
@@ -399,7 +415,21 @@ body {
 
 /* CONTACT*/
 .row-contact{
-    .wpcf7-form {
+    .wprt-tabs {
+        .tab-title{ //ul
+            text-align: center;
+            // border-color: transparent;
+        }
+    }
+    /* Tabs*/
+    .tab-content-wrap{
+        padding-left: 40px;   
+        padding-right: 40px;   
+        border: 1px solid #dbdbdb;
+        border-top: none;
+    }
+    /* Form */
+    .wpcf7-form { //form
        margin-top: 20px;
         .form-control-wrap {
             width: 100%;
@@ -417,8 +447,10 @@ body {
             .wpcf7-form-control {
                 color: #666;
                 font-weight: 500;
+                background-color: white;
+                border-color: $accentbtn;
                 &::placeholder   {
-                    color: $grislight;
+                    color: darken($color: $grislight, $amount: 10%);
                 }
             }
         }
@@ -432,8 +464,9 @@ body {
     }
 
     .map-iframe {
-        width: 100%;
+        width: 95%;
         margin-bottom: 0;
+        height: 250px;
     }
 }
 /* FOOTER */
@@ -656,15 +689,8 @@ body {
     }
 }
 .list-services { //ul
-    list-style-type: none;
-    >li {
-        padding-left: 10px;
-        margin-bottom: 5px;
-        position: relative;
-        span.icon{
-            position: absolute;
-            left: -16px;
-        }
+    .icon {
+        top: 2px;
     }
 }
 
