@@ -49,7 +49,10 @@ $text-whiteaccent: $whiteaccent;
 .wprt-headings.style-1 .sub-heading {
     margin-top: 20px;
 }
-
+.wprt-headings.style-1 .sep{
+    height: 5px;
+    border-radius: 3px;
+}
 /* HTML-BODY */
 html {
     // scroll-behavior: smooth;
