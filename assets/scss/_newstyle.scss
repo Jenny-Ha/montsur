@@ -424,8 +424,18 @@ body {
             }
             .item-title {
                 display: inline-block;
+                position: relative;
+                top: 1px;
+                @media only screen and (max-width: 991px) {
+                    margin: 0 1px;
+                }
+                > span {
+                    border-top: 2px solid #ebebeb;
+                }
                 &.active {
-                    top: 5px;
+                    @media only screen and (max-width: 991px) {
+                        top: 5px;
+                    }
                     > span {
                         margin-bottom: 0;
                         border-bottom: 2px solid white !important;
