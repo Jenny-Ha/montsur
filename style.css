@@ -41552,11 +41552,6 @@ body {
   display: block;
   margin: auto;
   width: 280px;
-  padding: 15px 0px 0px;
-}
-
-.row-certified-1 .text-respaldo {
-  padding: 30px 0px 0px;
 }
 
 .row-certified-1 .text-respaldo .text-medium {
@@ -41696,6 +41691,12 @@ body {
   padding: 70px 0 35px;
 }
 
+@media only screen and (max-width: 991px) {
+  #footer {
+    padding: 30px 0 0;
+  }
+}
+
 #footer .logo-footer {
   height: 100px;
 }
@@ -41751,6 +41752,7 @@ body {
 
 #bottom #copyright {
   font-size: 12px;
+  line-height: 1.25;
 }
 
 /* MODAL BROCHURE */
@@ -41779,6 +41781,14 @@ body {
   padding-bottom: 15px;
 }
 
+@media only screen and (min-width: 992px) {
+  .page-service.header-style-2 #site-header-inner {
+    max-width: 1000px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
 #featured-title {
   position: relative;
 }
@@ -41798,9 +41808,26 @@ body {
 }
 
 #featured-title .featured-title-inner-wrap {
-  padding-left: 15px;
-  padding-right: 15px;
-  height: 300px;
+  height: 400px;
+}
+
+@media only screen and (max-width: 991px) {
+  #featured-title .featured-title-inner-wrap {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #featured-title .featured-title-inner-wrap {
+    height: 250px;
+    display: table;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #featured-title .featured-title-heading-wrap {
+    display: table-cell;
+  }
 }
 
 #featured-title .featured-title-heading {
@@ -41821,7 +41848,7 @@ body {
   border-radius: 5px;
 }
 
-/* NavBar de Services */
+/* NavBar vertical de Services */
 .services-nav .menu > li {
   padding-right: 40px;
   border: 2px solid transparent;
@@ -41872,6 +41899,26 @@ body {
   border-radius: 5px;
 }
 
+.service-box-content .img-service-wrap {
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-bottom: 15px;
+}
+
+.service-box-content .img-service-wrap > img {
+  width: 50%;
+  float: left;
+  padding: 0 5px;
+}
+
+.service-box-content .img-service-wrap-full {
+  margin-bottom: 15px;
+}
+
+.service-box-content .img-service-wrap-full > img {
+  width: 100%;
+}
+
 .list-services {
   list-style-type: none;
 }
@@ -41884,7 +41931,7 @@ body {
 
 .list-services > li span.icon {
   position: absolute;
-  left: -20px;
+  left: -16px;
 }
 
 /* Contacto*/
