@@ -41256,7 +41256,6 @@ body.page #main-content {
 BY: Jenny Ha
 */
 * {
-  outline: 1px solid rgba(173, 255, 47, 0.5) !important;
   font-display: block;
 }
 
@@ -41656,11 +41655,53 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 991px) {
+  .row-contact .wprt-tabs .tab-title {
+    border-bottom: 1px solid #dbdbdb;
+  }
+}
+
+.row-contact .wprt-tabs .tab-title .item-title {
+  display: inline-block;
+}
+
+.row-contact .wprt-tabs .tab-title .item-title.active {
+  top: 5px;
+}
+
+.row-contact .wprt-tabs .tab-title .item-title.active > span {
+  margin-bottom: 0;
+  border-bottom: 2px solid white !important;
+}
+
 .row-contact .tab-content-wrap {
   padding-left: 40px;
   padding-right: 40px;
   border: 1px solid #dbdbdb;
   border-top: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .row-contact .tab-content-wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .row-contact .list-info-contact {
+    font-size: 15px;
+  }
+}
+
+.row-contact .list-info-contact .icon {
+  font-size: 12px;
+  top: 6px;
+}
+
+.row-contact .ms-contact-form .form-control-wrap.your-message textarea {
+  height: 200px;
+  margin-bottom: 0px;
 }
 
 .row-contact .wpcf7-form {
@@ -41679,7 +41720,7 @@ body {
 }
 
 .row-contact .wpcf7-form .form-control-wrap label.error {
-  top: 5px;
+  top: 15px;
   font-size: 11px;
   color: rgba(28, 99, 184, 0.7);
 }
@@ -41716,10 +41757,21 @@ body {
   background-color: #1c63b8;
 }
 
+.row-contact .map-container {
+  margin-top: 35px;
+}
+
 .row-contact .map-iframe {
   width: 95%;
   margin-bottom: 0;
-  height: 250px;
+  height: 300px;
+}
+
+@media only screen and (max-width: 767px) {
+  .row-contact .map-iframe {
+    width: 100%;
+    height: 200px;
+  }
 }
 
 /* FOOTER */
