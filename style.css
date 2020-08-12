@@ -41371,6 +41371,10 @@ body {
   }
 }
 
+#site-header.is-fixed {
+  z-index: 999;
+}
+
 #site-logo-inner img {
   height: 52px;
 }
