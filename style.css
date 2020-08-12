@@ -41297,6 +41297,11 @@ body {
   color: #555;
 }
 
+.clearfix {
+  content: "";
+  clear: both;
+}
+
 /* BOTONS FIXED */
 .btn-fixed {
   width: 44px;
@@ -41731,12 +41736,12 @@ body {
 }
 
 #bottom {
-  padding: 20px 0px;
+  padding: 15px 0px;
   border-top: 1px solid #4b4b4d;
-  /* .bottom-bar-content {
-        display: block;
-        margin: 0px -15px;
-    } */
+}
+
+#bottom #copyright {
+  font-size: 12px;
 }
 
 /* MODAL BROCHURE */
@@ -41747,5 +41752,155 @@ body {
 
 .mfp-bg {
   opacity: 0.75;
+}
+
+/**********************************
+        Page Services
+**********************************/
+.page-service.header-style-2 #site-header-wrap {
+  position: initial !important;
+}
+
+.page-service.header-style-2 #site-header {
+  background-color: #1957a2 !important;
+}
+
+.page-service.header-style-2 #site-header-inner {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#featured-title {
+  position: relative;
+}
+
+#featured-title::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#featured-title.ft-industria {
+  background: url("assets/img/montsur/industria/page-title.jpg") center center/cover no-repeat local;
+}
+
+#featured-title .featured-title-inner-wrap {
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 300px;
+}
+
+#featured-title .featured-title-heading {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 600;
+  position: relative;
+}
+
+#featured-title .featured-title-heading::before {
+  content: "";
+  background-color: #1c63b8;
+  width: 45px;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+
+/* NavBar de Services */
+.services-nav .menu > li {
+  padding-right: 40px;
+  border: 2px solid transparent;
+}
+
+.services-nav .menu > li > a:hover::before {
+  background-color: #1c63b8;
+}
+
+.services-nav .menu > li.current-nav-it {
+  border-color: #1c63b8;
+  background-color: white;
+}
+
+.services-nav .menu > li.current-nav-it > a {
+  pointer-events: none;
+  color: #1c63b8;
+}
+
+.services-nav .menu > li.current-nav-it > a::before {
+  background-color: #1c64b9;
+}
+
+.services-nav .menu > li.current-nav-it > a::after {
+  font-family: 'wprticons' !important;
+  content: "\e943";
+  font-weight: 700;
+  position: absolute;
+  right: -25px;
+  color: #1c63b8;
+}
+
+/* Contenido del servicio*/
+.service-content-wrap h3 {
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.service-content-wrap h3::before {
+  content: "";
+  background-color: #297bde;
+  width: 35px;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  border-radius: 5px;
+}
+
+.list-services {
+  list-style-type: none;
+}
+
+.list-services > li {
+  padding-left: 10px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.list-services > li span.icon {
+  position: absolute;
+  left: -20px;
+}
+
+/* Contacto*/
+.row-promotion {
+  background-color: #1c63b8;
+}
+
+.row-promotion .wprt-action-box .heading-wrap .heading {
+  font-size: 18px;
+  line-height: 1.5;
+  color: whitesmoke;
+}
+
+.row-promotion .wprt-action-box .icon {
+  opacity: 0.5;
+}
+
+.row-promotion .wprt-action-box .btn-ot-white {
+  color: white;
+  border: 2px solid white;
+  background-color: transparent;
+}
+
+.row-promotion .wprt-action-box .btn-ot-white:hover {
+  background-color: #333;
+  border-color: #333;
 }
 /*# sourceMappingURL=style.css.map */

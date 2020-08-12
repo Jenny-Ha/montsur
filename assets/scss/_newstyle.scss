@@ -57,6 +57,12 @@ html {
 body {
     color: #555;
 }
+
+//fixing clearfix class
+.clearfix {
+    content: "";
+    clear: both;
+}
 /* BOTONS FIXED */
 .btn-fixed {
     width: 44px;
@@ -476,12 +482,11 @@ body {
         
 }
 #bottom {
-    padding: 20px 0px;
+    padding: 15px 0px;
     border-top: 1px solid $grismiddle;
-    /* .bottom-bar-content {
-        display: block;
-        margin: 0px -15px;
-    } */
+    #copyright {
+        font-size: 12px;
+    }
 }
 
 /* MODAL BROCHURE */
@@ -491,4 +496,163 @@ body {
 }
 .mfp-bg {
     opacity: 0.75;
+}
+
+/**********************************
+        Page Services
+**********************************/
+// Fix header with style 2
+.page-service.header-style-2 {
+    #site-header-wrap {
+        position: initial !important;
+    }
+    #site-header {
+        background-color: darken($color: $accentbtn, $amount: 5%) !important;
+    }
+    #site-header-inner {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+#featured-title  {
+    position: relative;
+    &::before {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    //Para pg industria
+    &.ft-industria {
+        background: url('assets/img/montsur/industria/page-title.jpg') center center/cover no-repeat local;
+    }
+    //
+    .featured-title-inner-wrap {
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 300px;
+    }
+    .featured-title-heading { //H1
+        color: white;
+        font-size: 3.5rem;
+        font-weight: 600;
+        position: relative;
+        &::before {
+            content: "";
+            background-color: $accentbtn;
+            width: 45px;
+            height: 5px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            border-radius: 5px;
+        }
+    }
+}
+
+/* NavBar de Services */
+.services-nav { //.wprt-navbar 
+    .menu{
+        >li {
+            padding-right: 40px;
+            border: 2px solid transparent;
+            >a{
+                &:hover{
+                    &::before{
+                        background-color: $accentbtn;
+                    }
+                }
+            }
+            &.current-nav-it {
+                border-color: $accentbtn;
+                background-color: white;
+                >a {
+                    pointer-events: none;
+                    color: $accentbtn;
+                    &::before{
+                        background-color: lighten($color: $accentbtn, $amount: 0.3);
+                    }
+                    &::after {
+                        font-family: 'wprticons' !important;
+                        content: "\e943";
+                        font-weight: 700;
+                        position: absolute;
+                        right: -25px;
+                        color: $accentbtn;
+                        
+                    }
+                }
+            }
+            
+        }
+
+    }
+}
+
+/* Contenido del servicio*/
+.service-content-wrap{
+    h3 {
+        font-weight: 600;
+        text-transform: uppercase;
+        position: relative;
+        &::before{
+            content: "";
+            background-color:lighten($color: $accentbtn, $amount: 10%);
+            width: 35px;
+            height: 3px;
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            border-radius: 5px;
+        }
+    }
+}
+.service-box-content{
+
+}
+.list-services { //ul
+    list-style-type: none;
+    >li {
+        padding-left: 10px;
+        margin-bottom: 5px;
+        position: relative;
+        span.icon{
+            position: absolute;
+            left: -20px;
+        }
+    }
+}
+
+/* Contacto*/
+.row-promotion {
+    background-color: lighten($color: $accentbtn, $amount:  0%);
+    .wprt-action-box {
+        .heading-wrap {
+            .heading{
+                font-size: 18px;   
+                line-height: 1.5;
+                color: whitesmoke;
+            }
+        }
+    
+        .icon {
+            opacity: 0.5; 
+        }
+        .wprt-button {
+            // border: 2px solid transparent;
+        }
+        .btn-ot-white {
+            color: white;
+            border: 2px solid white;
+            background-color: transparent;
+            &:hover{
+                background-color: #333;
+                border-color: #333;
+            }
+        }
+    }
 }
