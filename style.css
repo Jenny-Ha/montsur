@@ -41518,10 +41518,16 @@ body {
 }
 
 @media only screen and (max-width: 992px) {
+  .row-nosotros .tab-title .item-title > span {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
   .row-nosotros .tab-title .item-title {
     display: inline-block;
     width: 49%;
-    margin: 3px 3px 0px 0px;
+    margin: 2px 2px 0px 0px;
     line-height: 1.75;
   }
 }
@@ -41618,7 +41624,7 @@ body {
 }
 
 .row-certified-1 .text-respaldo .text-medium {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 @media only screen and (min-width: 992px) {
