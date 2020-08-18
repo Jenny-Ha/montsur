@@ -123,9 +123,9 @@ body {
     border-radius: 6px 0 0 6px;
     box-shadow: -2px 2px 4px rgba(0, 0, 0, .45);
     .wprt-button{
-        background-color: darken($color: $accentbtn, $amount: 15%) !important;
+        background-color: darken($color: $accentbtn, $amount: 10%) !important;
         &:hover {
-            background-color: lighten($accentbtn, 10%) !important;
+            background-color: lighten($accentbtn, 7%) !important;
         }
     }
 }
@@ -139,7 +139,7 @@ body {
     box-shadow: -2px 2px 4px rgba(0, 0, 0, .45);
    // background: url(assets/img/montsur/icono_certificados.png) no-repeat center;
    .wprt-button {
-        background-color: darken($color: $accentbtn, $amount: 15%) !important;
+        background-color: darken($color: $accentbtn, $amount: 7%) !important;
         &:hover {
             background-color: #52a920!important;
         }
