@@ -41857,16 +41857,33 @@ body {
 
 @media only screen and (max-width: 991px) {
   #footer {
-    padding: 30px 0 0;
+    padding: 40px 0 0;
   }
 }
 
 #footer .logo-footer {
   height: 100px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  #footer .widget {
+    font-size: 13px;
+    margin-top: 0px;
+  }
 }
 
 #footer .textwidget p {
   margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 450px) {
+  #footer .textwidget {
+    text-align: center;
+  }
+  #footer .textwidget .it {
+    font-style: italic;
+  }
 }
 
 #footer .widget-title {
@@ -41877,32 +41894,23 @@ body {
   background-color: #a5a4a7 !important;
 }
 
-#footer .wprt-list.style-2.icon-top {
-  margin-bottom: 5px;
+#footer .list-footer {
+  margin-left: 20px !important;
 }
 
-#footer .wprt-list.style-2.icon-top .icon {
-  top: 4px;
+#footer .list-footer > li {
+  padding-left: 10px !important;
+  font-size: 13px;
 }
 
-#footer .wprt-list.style-2.icon-top .icon > i {
-  font-size: 16px;
-  color: whitesmoke;
-  opacity: 0.8;
+#footer .list-footer > li .icon {
+  top: 2px;
 }
 
-#footer .wprt-list.style-2.icon-top .icon .rt-icon-facebook {
-  font-size: 18px;
-  margin-left: -2px;
-}
-
-#footer .wprt-list.style-2.icon-top .iw-fb .icon {
-  top: 0px;
-}
-
-#footer .wprt-list.style-2.icon-top .text {
-  margin-bottom: 5px;
-  line-height: 1.75;
+@media only screen and (min-width: 768px) {
+  #footer .list-footer > li {
+    font-size: 15px;
+  }
 }
 
 #footer .widget-link {
@@ -41916,7 +41924,7 @@ body {
 
 #bottom #copyright {
   font-size: 12px;
-  line-height: 1.25;
+  line-height: 1.4;
 }
 
 /* MODAL BROCHURE */
