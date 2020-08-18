@@ -244,20 +244,30 @@ body {
 
 /* NOSOTROS */
 .row-nosotros {
-    .wprt-tabs {
-
-    }
     .tab-title  {
         text-align: center;
         border-color: transparent;
+        @media only screen and (max-width: 992px) {
+            margin: 0 -4px 0 -2px;
+        }
         .item-title {
             color: #777;
             > span {
                 text-transform: uppercase;
             }
+            //Query sm and xs
+            @media only screen and (max-width: 992px) {
+                display: inline-block;
+                width: 49%;
+                margin: 3px 3px 0px 0px;
+                line-height: 1.75;
+            }
         }
     }
 
+    .tab-content-wrap { //contiene todos los tabs content
+        line-height: 2;
+    }
     .tab-nosotros {
         .wrap-logo {
             margin-bottom: 25px;
@@ -266,7 +276,6 @@ body {
             }
         }
         p {
-            padding: 0 20px;
             font-size: 15px;
             //change mobile
             @media only screen and (max-width: 991px) {
@@ -276,33 +285,27 @@ body {
         }
         .wrap-img {
             img {
-                margin-top: 20px;
-                max-width: 75%;
+                @media only screen and (min-width: 992px) {
+                    margin-top: 20px;
+                }
+                width: 100%;
+                max-width: 750px;
             }
         }
     }
     .tab-valores {
-        .wprt-list {
-            .icon {
-                background: $accentbtn;
-                line-height: 1;
-                padding: 3px;
-                top: 7px !important;
-                >i {
-                    color: white !important;
-                    font-size: 12px;
-                }
-            }
-            .text {
-                // Requisito: Justificado
-                display: inline-block;
+        .list-valores{ //ul
+            >li {
                 text-align: justify;
                 @media only screen and (min-width: 992px) {
                     font-size: 15px;
                 }
-
+                .icon {
+                    top: 3px;
+                }
             }
         }
+        
         .wrap-img {
             // padding-top: 15px;
             text-align: center;
