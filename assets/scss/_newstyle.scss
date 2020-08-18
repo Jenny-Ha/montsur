@@ -53,6 +53,7 @@ $text-whiteaccent: $whiteaccent;
 }
 ul.list-with-icon {
     list-style-type: none;
+    // margin-left: 20px;
     >li {
         padding-left: 10px;
         margin-bottom: 5px;
@@ -121,8 +122,11 @@ body {
     z-index: 999;
     border-radius: 6px 0 0 6px;
     box-shadow: -2px 2px 4px rgba(0, 0, 0, .45);
-    .wprt-button:hover {
-        background-color: lighten($accentbtn, 10%) !important;
+    .wprt-button{
+        background-color: darken($color: $accentbtn, $amount: 10%) !important;
+        &:hover {
+            background-color: lighten($accentbtn, 7%) !important;
+        }
     }
 }
 #btn_whatsapp {
@@ -134,9 +138,11 @@ body {
     border-radius: 6px 0 0 6px;
     box-shadow: -2px 2px 4px rgba(0, 0, 0, .45);
    // background: url(assets/img/montsur/icono_certificados.png) no-repeat center;
-    
-    .wprt-button:hover {
-        background-color: #52a920!important;
+   .wprt-button {
+        background-color: darken($color: $accentbtn, $amount: 7%) !important;
+        &:hover {
+            background-color: #52a920!important;
+        }
     }
 }
 /* HEADER*/
@@ -557,48 +563,49 @@ body {
 #footer { 
     padding: 70px 0 35px;
     @media only screen and (max-width: 991px) {
-        padding: 30px 0 0;
+        padding: 40px 0 0;
     }
     .logo-footer {
         height: 100px;
+        margin-bottom: 30px;
+    }
+    .widget{ //Contenedor de las dos culumnas
+        @media only screen and (max-width: 767px) {
+            font-size: 13px;
+            margin-top: 0px;
+        }
     }
     .textwidget {
         p {
             margin-bottom: 0px;
         }
+        @media only screen and (max-width: 450px) {
+            text-align: center;
+            .it {
+                font-style: italic;
+            }
+        }
     }
 
     // Contacto
-    .widget_information {
-    }
     .widget-title {
         margin-bottom: 20px !important;
         > span:after{
             background-color: $grislight !important;
         }
     }
-    .wprt-list.style-2.icon-top  {
-        margin-bottom: 5px;
-        .icon {
-            top: 4px;
-            >i {
-                font-size: 16px;
-                color: whitesmoke;
-                opacity: 0.8;
-            }
-            .rt-icon-facebook {
-                font-size: 18px;
-                margin-left:  -2px;
-            }
-        }
-        .iw-fb {
+    // Lista de .ms-contacto
+    .list-footer  { //ul
+        margin-left: 20px !important;
+        >li {
             .icon {
-                top: 0px;
+                top: 2px;
             }
-        }
-        .text {
-            margin-bottom: 5px;
-            line-height: 1.75;
+            padding-left: 10px !important;
+            font-size: 13px;
+            @media only screen and (min-width: 768px) {
+                font-size: 15px;
+            }
         }
     }
     .widget-link {
@@ -611,7 +618,7 @@ body {
     border-top: 1px solid $grismiddle;
     #copyright {
         font-size: 12px;
-        line-height: 1.25;
+        line-height: 1.4;
     }
 }
 
