@@ -41288,6 +41288,12 @@ BY: Jenny Ha
   text-align: justify;
 }
 
+@media only screen and (max-width: 991px) {
+  .wprt-headings.style-1 .sub-heading {
+    font-size: 14px;
+  }
+}
+
 ul.list-with-icon {
   list-style-type: none;
 }
@@ -41432,7 +41438,7 @@ body {
 
 @media only screen and (max-width: 749px) {
   #rev-slider2 .desc {
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 0px;
   }
 }
@@ -41518,6 +41524,12 @@ body {
   font-size: 15px;
 }
 
+@media only screen and (max-width: 991px) {
+  .row-nosotros .tab-nosotros p {
+    font-size: 14px;
+  }
+}
+
 .row-nosotros .tab-nosotros .wrap-img img {
   margin-top: 20px;
   max-width: 75%;
@@ -41540,12 +41552,25 @@ body {
   text-align: justify;
 }
 
+@media only screen and (min-width: 992px) {
+  .row-nosotros .tab-valores .wprt-list .text {
+    font-size: 15px;
+  }
+}
+
 .row-nosotros .tab-valores .wrap-img {
   text-align: center;
 }
 
 .row-nosotros .tab-valores .wrap-img img {
   max-width: 400px;
+}
+
+@media only screen and (min-width: 992px) {
+  .row-nosotros .tab-vision,
+  .row-nosotros .tab-mision {
+    font-size: 15px;
+  }
 }
 
 /* CERTIFIED */
@@ -41568,10 +41593,23 @@ body {
   display: block;
   margin: auto;
   width: 280px;
+  max-width: 65%;
+}
+
+@media only screen and (max-width: 767px) {
+  .row-certified-1 .text-respaldo h2 {
+    font-size: 1.75em;
+  }
 }
 
 .row-certified-1 .text-respaldo .text-medium {
-  font-size: 130%;
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 992px) {
+  .row-certified-1 .text-respaldo .text-medium {
+    font-size: 18px;
+  }
 }
 
 /* SERVICIOS */
