@@ -41667,14 +41667,17 @@ body {
   top: 1px;
 }
 
+.row-contact .wprt-tabs .tab-title .item-title > span {
+  border-top: 2px solid #ebebeb;
+}
+
 @media only screen and (max-width: 991px) {
   .row-contact .wprt-tabs .tab-title .item-title {
     margin: 0 1px;
   }
-}
-
-.row-contact .wprt-tabs .tab-title .item-title > span {
-  border-top: 2px solid #ebebeb;
+  .row-contact .wprt-tabs .tab-title .item-title > span {
+    border-top: none;
+  }
 }
 
 @media only screen and (max-width: 991px) {
