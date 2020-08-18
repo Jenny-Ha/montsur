@@ -41372,6 +41372,10 @@ body {
           box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.45);
 }
 
+#btn_brochure .wprt-button {
+  background-color: #123f76 !important;
+}
+
 #btn_brochure .wprt-button:hover {
   background-color: #297bde !important;
 }
@@ -41385,6 +41389,10 @@ body {
   border-radius: 6px 0 0 6px;
   -webkit-box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.45);
           box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.45);
+}
+
+#btn_whatsapp .wprt-button {
+  background-color: #123f76 !important;
 }
 
 #btn_whatsapp .wprt-button:hover {

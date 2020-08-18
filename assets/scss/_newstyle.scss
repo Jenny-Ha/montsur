@@ -122,8 +122,11 @@ body {
     z-index: 999;
     border-radius: 6px 0 0 6px;
     box-shadow: -2px 2px 4px rgba(0, 0, 0, .45);
-    .wprt-button:hover {
-        background-color: lighten($accentbtn, 10%) !important;
+    .wprt-button{
+        background-color: darken($color: $accentbtn, $amount: 15%) !important;
+        &:hover {
+            background-color: lighten($accentbtn, 10%) !important;
+        }
     }
 }
 #btn_whatsapp {
@@ -135,9 +138,11 @@ body {
     border-radius: 6px 0 0 6px;
     box-shadow: -2px 2px 4px rgba(0, 0, 0, .45);
    // background: url(assets/img/montsur/icono_certificados.png) no-repeat center;
-    
-    .wprt-button:hover {
-        background-color: #52a920!important;
+   .wprt-button {
+        background-color: darken($color: $accentbtn, $amount: 15%) !important;
+        &:hover {
+            background-color: #52a920!important;
+        }
     }
 }
 /* HEADER*/
