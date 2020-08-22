@@ -1,9 +1,5 @@
 <?php 
 
-    $from = "info@montsur.com";
-    $to = "ps.jennyha@gmail.com"; // email address of destination pass: @goldpigperu
-    $subject = "Web Montsur - Contacto";
-
     //Correo que se enviará
     $name 	 = $_POST['name'];
 	$email 	 = $_POST['email'];
@@ -11,22 +7,47 @@
     $company = $_POST['subject'];
     $message = $_POST['message'];
 
-    $headers  = "MIME-Version: 1.0" . "\r\n";
-    $headers .= "Content-type: text/html; charset=iso-8859-1" . "\r\n";
-    $headers .= "From: ". $from. "\r\n";
-    $headers .= "Reply-To: ". $from. "\r\n";
-    $headers .= "X-Mailer: PHP/" . phpversion();
-    $headers .= "X-Priority: 1" . "\r\n";
+    $body = "Nombre del consultante: " . $name . " " . $company . "<br>Correo: " . $email . "<br>Teléfono: " . $phone . "<br>Mensaje: " . $message;
 
-    $mensajeCompleto = $message . '\nAtentamente: ' . $name . $company . $email . $phone;
+    /* Config PHP MAILER */
+    require "includes/PHPMailer/Exception.php";
+    require "includes/PHPMailer/PHPMailer.php";
+    require "includes/PHPMailer/SMTP.php";
 
-    if(mail($to, $subject, $mensajeCompleto, $headers)) {
-       
-        echo "<script>alert('Su mensaje se envió correctamente')</script>";
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+    use PHPMailer\PHPMailer\SMTP;
+
+    
+    /* Init */
+    $oMail= new PHPMailer();
+    $oMail->isSMTP();
+    //$oMail->SMTPDebug = SMTP::DEBUG_OFF; //No muestra info
+    $oMail->SMTPDebug = SMTP::DEBUG_CLIENT; //Info enviada al cliente
+
+    /* SMTP config */
+    $oMail->Host = 'localhost';
+    $oMail->Port=25;
+    $oMail->SMTPSecure=false;
+    $oMail->SMTPAuth=false;
+    $oMail->SMTPAutoTLS = false;
+
+    /* Sent info */
+    $oMail->setFrom("info@montsur.com","Web Montsur");
+    $oMail->addAddress("ruiai.bxb@gmail.com","El que recibe");
+    
+    // Content
+    $oMail->isHTML(true);
+    $oMail->Subject='Nuevo mensaje de '. $name;
+    $oMail->Body = $body;
+    //$oMail->msgHTML("Hola esto es una prueba de envió de correo");
+    $oMail->CharSet = 'UTF-8';
+   
+
+    // Enviar el mail
+    if (!$oMail->send()) {
+        echo 'Mailer Error: '. $oMail->ErrorInfo;
     } else {
-        echo "<script>alert('Failed envio')</script>";
-    }
-
-    // echo "<script> setTimeout(\"location.href='index.html'\", 1000)</script>";
-
+        echo 'Message sent!';
+    }    
 ?>
