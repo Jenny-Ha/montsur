@@ -23,8 +23,8 @@
     $oMail->Subject="PHPMailer comienza a trabajar";
     $oMail->msgHTML("Hola esto es una prueba de envió de correo");
 
-    $oMail->SMTPDebug = SMTP::DEBUG_OFF;
-    //$oMail->SMTPDebug = SMTP::DEBUG_CLIENT; //Info enviada al cliente
+    //$oMail->SMTPDebug = SMTP::DEBUG_OFF; //No muestra info
+    $oMail->SMTPDebug = SMTP::DEBUG_CLIENT; //Info enviada al cliente
 
     // Hasta aqui el original:
     /* $oMail= new PHPMailer();
