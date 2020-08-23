@@ -680,20 +680,25 @@
                             success: function( msg ) {
                                 var result, cls;
 
-                                if ( msg == 'Success' ) {
-                                    result = 'Your message has been sent. Thank you!';
+                                if ( msg == 'Success' ) { // Msg es el echo de contct.php
+                                    result = '¡Gracias!. Su mensaje fue enviado. Le responderemos cuanto antes ;
                                     cls = 'success';
                                 } else {
-                                    result = 'Error sending email.';
+                                    result = 'Lo sentimos. En este momento no podemos enviar su mensaje. Puede escribirnos a nuestro Whatsapp con el botón en el lado derecho.';
                                     cls = 'error';
                                 }
+
+                                /* if ( msg ) {
+                                    result = 'Data from the server' + msg;
+                                    cls = 'success';
+                                } */
 
                                 $form.prepend(
                                     $('<div />', {
                                         'class': 'wprt-alert ' + cls,
                                         'text' : result
                                     }).append(
-                                        $('<a class="remove" href="#"><i class="fa fa-close"></i></a>')
+                                        $('<a class="remove" href="#"><i class="fa fa-times"></i></a>')
                                     )
                                 );
 
