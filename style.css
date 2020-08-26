@@ -41661,7 +41661,13 @@ body {
 .container-icon-services .wprt-icon-box .heading {
   font-size: 18px;
   font-weight: 600;
+  line-height: 1.4;
   text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.container-icon-services .wprt-icon-box .heading > span {
+  font-size: 14px;
 }
 
 .container-icon-services .wprt-icon-box .heading a {
@@ -41670,7 +41676,7 @@ body {
 }
 
 .container-icon-services .wprt-icon-box .heading a:hover {
-  color: rgba(28, 99, 184, 0.78);
+  color: #1f6fce;
 }
 
 .container-icon-services .wprt-icon-box .icon-wrap {
@@ -41679,10 +41685,14 @@ body {
   border-color: #1c63b8 !important;
 }
 
+.container-icon-services .wprt-icon-box .icon-wrap:hover {
+  background-color: #2174d7 !important;
+}
+
 .container-icon-services .wprt-icon-box .img-ico {
   display: block;
-  height: 50px;
-  margin: 25px auto;
+  height: 68px;
+  margin: 7px auto 0px;
 }
 
 .mfp-arrow-left:after,

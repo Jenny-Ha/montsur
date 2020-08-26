@@ -397,24 +397,32 @@ body {
         .heading {
             font-size: 18px;
             font-weight: 600;
+            line-height: 1.4;
             text-transform: uppercase;
+            margin-top: 10px;
+            >span {
+                font-size: 14px;
+            }
             a {
                 display: block;
                 color: $text-primary;
-            &:hover {
-                color: rgba($text-primary, 0.78);
-            }
+                &:hover {
+                    color: lighten($text-primary, 5%);
+                }
             }
         }
         .icon-wrap {
             background-color: #1c63b8 !important;
             color: #fff !important;
             border-color: #1c63b8 !important;
+            &:hover {
+                background-color: lighten($text-primary, 7%) !important;
+            }
         }
         .img-ico {
             display: block;
-            height: 50px;
-            margin: 25px auto;
+            height: 68px;
+            margin: 7px auto 0px;
             // filter: invert(1);
         }
     }

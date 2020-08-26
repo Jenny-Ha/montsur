@@ -681,7 +681,7 @@
                                 var result, cls;
 
                                 if ( msg == 'Success' ) { // Msg es el echo de contct.php
-                                    result = '¡Gracias!. Su mensaje fue enviado. Le responderemos cuanto antes ;
+                                    result = '¡Gracias!. Su mensaje fue enviado. Le responderemos cuanto antes';
                                     cls = 'success';
                                 } else {
                                     result = 'Lo sentimos. En este momento no podemos enviar su mensaje. Puede escribirnos a nuestro Whatsapp con el botón en el lado derecho.';
