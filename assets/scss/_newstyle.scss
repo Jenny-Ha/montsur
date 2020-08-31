@@ -81,6 +81,9 @@ html {
 }
 body {
     color: #555;
+    @media only screen and (max-width: 767px) {
+        font-size: 13px;
+    }
 }
 
 //fixing clearfix class
@@ -285,11 +288,13 @@ body {
             }
         }
         p {
-            font-size: 15px;
-            //change mobile
-            @media only screen and (max-width: 991px) {
-                font-size: 14px;
+            @media only screen and (min-width: 992px) {
+                font-size: 15px;
             }
+            //change mobile
+            /* @media only screen and (max-width: 991px) {
+                font-size: 13px;
+            } */
 
         }
         .wrap-img {
@@ -740,7 +745,9 @@ body {
                 border-color: $accentbtn;
                 background-color: white;
                 >a {
-                    pointer-events: none;
+                    @media only screen and (min-width: 768px) {
+                        pointer-events: none;
+                    }
                     color: $accentbtn;
                     &::before{
                         background-color: lighten($color: $accentbtn, $amount: 0.3);
@@ -807,6 +814,21 @@ body {
 /* Contacto*/
 .row-promotion {
     background-color: lighten($color: $accentbtn, $amount:  0%);
+    // background-color: darken($color: $accentbtn, $amount: 5%);
+    /* background:url('assets/img/montsur/bg-contact-row.jpg');
+    background-size: cover;
+    background-position-y: 25%;
+    background-position-x: 75%;
+    position: relative;
+    &::before {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    } */
     .wprt-action-box {
         .heading-wrap {
             .heading{
@@ -817,10 +839,7 @@ body {
         }
     
         .icon {
-            opacity: 0.5; 
-        }
-        .wprt-button {
-            // border: 2px solid transparent;
+            opacity: 0.75; 
         }
         .btn-ot-white {
             color: white;
