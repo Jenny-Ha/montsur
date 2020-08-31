@@ -384,14 +384,14 @@ body {
                 color: $text-whiteaccent;
             }
         }
-        .wprt-icon-box{
+        /* .wprt-icon-box{
             .heading {
                 color: white;
             }
             .desc {
                 color: $text-whiteaccent;
             }
-        }
+        } */
      } // Bbg-accent
 
  }
@@ -418,13 +418,15 @@ body {
             a {
                 display: block;
                 color: $text-primary;
+                font-size: 18px;
                 &:hover {
                     color: lighten($text-primary, 5%);
                 }
             }
         }
-        .desc { //p
+        .text-service {
             font-size: 14px;
+            margin-bottom: 4px ;
         }
         .icon-wrap {
             background-color: #1c63b8 !important;
