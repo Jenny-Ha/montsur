@@ -41700,6 +41700,10 @@ body {
   color: #1f6fce;
 }
 
+.container-icon-services .wprt-icon-box .desc {
+  font-size: 14px;
+}
+
 .container-icon-services .wprt-icon-box .icon-wrap {
   background-color: #1c63b8 !important;
   color: #fff !important;
