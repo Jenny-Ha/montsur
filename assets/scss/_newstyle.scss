@@ -140,7 +140,7 @@ body {
     z-index: 999;
     border-radius: 6px 0 0 6px;
     box-shadow: -2px 2px 4px rgba(0, 0, 0, .45);
-   // background: url(assets/img/montsur/icono_certificados.png) no-repeat center;
+   // background: url(assets/img/icono_certificados.png) no-repeat center;
    .wprt-button {
         background-color: darken($color: $accentbtn, $amount: 3%) !important;
         &:hover {
@@ -339,7 +339,7 @@ body {
 
 /* CERTIFIED */
 .row-certified-1 {
-    background: url(assets/img/montsur/bg_respaldo.jpg) center center;
+    background: url(assets/img/bg_respaldo.jpg) center center;
     position: relative;
     //Overlay 
     &:before {
@@ -425,7 +425,7 @@ body {
         }
         .text-service {
             font-size: 14px;
-            margin-bottom: 4px ;
+            margin-bottom: 4px;
         }
         .icon-wrap {
             background-color: #1c63b8 !important;
@@ -696,7 +696,7 @@ body {
     }
     //Para pg industria
     &.ft-industria {
-        background: url('assets/img/montsur/industria/page-title.jpg') center center/cover no-repeat local;
+        background: url('assets/img/industria/page-title.jpg') center center/cover no-repeat local;
     }
     //
     .featured-title-inner-wrap {
@@ -819,7 +819,7 @@ body {
 .row-promotion {
     background-color: lighten($color: $accentbtn, $amount:  0%);
     // background-color: darken($color: $accentbtn, $amount: 5%);
-    /* background:url('assets/img/montsur/bg-contact-row.jpg');
+    /* background:url('assets/img/bg-contact-row.jpg');
     background-size: cover;
     background-position-y: 25%;
     background-position-x: 75%;
