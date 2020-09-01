@@ -711,6 +711,24 @@ body {
     &.ft-industria {
         background: url('assets/img/industria/page-title.jpg') center center/cover;
     }
+    &.ft-minería{
+        background: url('assets/img/mineria/page-title.jpg') center center/cover;
+    }
+    &.ft-pesqueria{
+        background: url('assets/img/pesqueria/page-title.jpg') center center/cover;
+    }
+    &.ft-petroleo{
+        background: url('assets/img/petroleo/page-title.jpg') center center/cover;
+    }
+    &.ft-construccion{
+        background: url('assets/img/construccion/page-title.jpg') center center/cover;
+    }
+    &.ft-comercio{
+        background: url('assets/img/comercio/page-title.jpg') center center/cover;
+    }
+    &.ft-energia{
+        background: url('assets/img/energia/page-title.jpg') center center/cover;
+    }
     //Para otros-servicios
     &.ft-otros {
         background: url('assets/img/otros-servicios/page-title.jpg') center center/cover;
@@ -822,8 +840,9 @@ body {
     }
     .img-service-wrap-full {
         margin-bottom: 15px;
+        text-align: center;
         >img {
-            width: 100%;
+            max-width: 100%;
         }
     }
 }
