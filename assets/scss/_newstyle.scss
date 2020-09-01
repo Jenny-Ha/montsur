@@ -384,14 +384,14 @@ body {
                 color: $text-whiteaccent;
             }
         }
-        .wprt-icon-box{
+        /* .wprt-icon-box{
             .heading {
                 color: white;
             }
             .desc {
                 color: $text-whiteaccent;
             }
-        }
+        } */
      } // Bbg-accent
 
  }
@@ -402,12 +402,12 @@ body {
         .heading {
             font-size: 20px;
             font-weight: 600;
-            line-height: 1.2;
+            line-height: 1.35;
             text-transform: uppercase;
             margin-top: 10px;
             @media only screen and (max-width: 767px) {
-                font-size: 16px;
-                line-height: 1.5;
+                font-size: 18px;
+                line-height: 1.4;
             }
             >span {
                 font-size: 14px;
@@ -423,8 +423,9 @@ body {
                 }
             }
         }
-        .desc { //p
+        .text-service {
             font-size: 14px;
+            margin-bottom: 4px ;
         }
         .icon-wrap {
             background-color: #1c63b8 !important;
