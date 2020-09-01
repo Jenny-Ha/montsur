@@ -700,7 +700,7 @@ body {
     position: relative;
     &::before {
         content: "";
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.55);
         width: 100%;
         height: 100%;
         position: absolute;
@@ -709,7 +709,11 @@ body {
     }
     //Para pg industria
     &.ft-industria {
-        background: url('assets/img/industria/page-title.jpg') center center/cover no-repeat local;
+        background: url('assets/img/industria/page-title.jpg') center center/cover;
+    }
+    //Para otros-servicios
+    &.ft-otros {
+        background: url('assets/img/otros-servicios/page-title.jpg') center center/cover;
     }
     //
     .featured-title-inner-wrap {
