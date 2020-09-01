@@ -476,32 +476,27 @@ body {
     .wprt-tabs {
         .tab-title{ //ul
             text-align: center;
-            // border-color: transparent;
-            @media only screen and (max-width: 991px) {
-                border-bottom: 1px solid #dbdbdb;
-            }
+            border-bottom: 2px solid $accentbtn;
+            /* @media only screen and (max-width: 991px) {
+                border-bottom: 1px solid $accentbtn;
+            } */
             .item-title {
                 display: inline-block;
                 position: relative;
-                top: 1px;
+                top: 2px;
+                margin: 0 !important;
                 > span {
-                    border-top: 2px solid #ebebeb;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    color: #777;
+                    margin-bottom: 0px !important;
                 }
-                @media only screen and (max-width: 991px) {
-                    margin: 0 1px;
-                    > span {
-                        border-top: none;
-                    }
+            &.active {
+                >span {
+                    color: white;
                 }
-                &.active {
-                    @media only screen and (max-width: 991px) {
-                        top: 5px;
-                    }
-                    > span {
-                        margin-bottom: 0;
-                        border-bottom: 2px solid white !important;
-                    }
-                }
+            }
+
             }
         }
     }
@@ -509,7 +504,7 @@ body {
     .tab-content-wrap{
         padding-left: 40px;   
         padding-right: 40px;   
-        border: 1px solid #dbdbdb;
+        border: 2px solid $accentbtn;
         border-top: none;
         @media only screen and (max-width: 767px) {
             padding-left: 20px;   
@@ -524,6 +519,13 @@ body {
             font-size: 12px;
             top: 6px;
 
+        }
+    }
+    //  text intro 
+    .intro-info{
+        text-align: center;
+        @media only screen and (min-width: 992px) {
+            font-size: 15px;
         }
     }
     /* Form */
@@ -543,11 +545,12 @@ body {
             width: 100%;
             margin-bottom: 10px;
             label {
-                font-weight: 600;
-                color: #999;
-                padding-left: 22px;
                 &.error {
-                    top: 15px;
+                    font-weight: 600;
+                    padding-left: 22px;
+                    display: block;
+                    position: initial;
+                    line-height: 1.5;
                     font-size: 11px;
                     color: rgba($text-primary, 0.7)
                 }
@@ -556,7 +559,8 @@ body {
                 color: #666;
                 font-weight: 500;
                 background-color: white;
-                border-color: $accentbtn;
+                border-color: lighten($color: $accentbtn, $amount: 3%);
+                border-width: 1px;
                 &::placeholder   {
                     color: darken($color: $grislight, $amount: 10%);
                 }
@@ -565,9 +569,6 @@ body {
         .wrap-submit{
             text-align: center;
             margin-top: 20px;
-        }
-        input[type="submit"] {
-            background-color: $accentbtn;
         }
     }
     .map-container{
