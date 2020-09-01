@@ -21,7 +21,7 @@ $text-whiteaccent: $whiteaccent;
 
 // Contenedores
 * {
-    //outline: 1px solid rgba(greenyellow, 0.5) !important;
+    outline: 1px solid rgba(greenyellow, 0.5) !important;
     font-display: block;
 }
 /* GENERAL */
@@ -166,6 +166,7 @@ body {
     .wprt-container {
         @media only screen and (min-width: 992px) {
             max-width: 1000px;
+            width: 90%
         }
 
     }
@@ -683,6 +684,7 @@ body {
         padding-top: 15px;
         padding-bottom: 15px;
         @media only screen and (min-width: 992px) {
+            width: 95%;
             max-width: 1000px;
             padding-left: 15px;
             padding-right: 15px;
