@@ -46,11 +46,23 @@ $text-whiteaccent: $whiteaccent;
 .text-justify {
     text-align: justify;
 }
-.wprt-headings.style-1 .sub-heading {
-    @media only screen and (max-width: 991px) {
-        font-size: 14px;
+
+.wprt-headings.style-1  {
+    h2 {
+        @media only screen and (max-width: 767px) {
+            font-size: 24px;
+        }
+    }
+    .sub-heading {
+        @media only screen and (max-width: 991px) {
+            font-size: 14px;
+        }
+        @media only screen and (max-width: 767px) {
+            font-size: 13px;
+        }
     }
 }
+
 ul.list-with-icon {
     list-style-type: none;
     // margin-left: 20px;
