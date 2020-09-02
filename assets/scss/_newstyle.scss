@@ -786,6 +786,11 @@ body {
             padding-right: 40px;
             border: 2px solid transparent;
             >a{
+                &::before{ //viñeta
+                    @media only screen and (max-width: 767px) {
+                        top:16px;
+                    }
+                }
                 &:hover{
                     &::before{
                         background-color: $accentbtn;
