@@ -24,7 +24,20 @@ $text-whiteaccent: $whiteaccent;
     // outline: 1px solid rgba(greenyellow, 0.5) !important;
     font-display: block;
 }
+
+/* HTML-BODY */
+body {
+    color: #555;
+    @media only screen and (max-width: 767px) {
+        font-size: 12px;
+    }
+}
 /* GENERAL */
+h3 {
+    @media only screen and (max-width: 767px) {
+        font-size: 18px;
+    }
+}
 .max-container {
     max-width: 1000px;
 }
@@ -86,17 +99,6 @@ ul.list-with-icon {
     border-radius: 3px;
 }
 
-
-/* HTML-BODY */
-html {
-    // scroll-behavior: smooth;
-}
-body {
-    color: #555;
-    @media only screen and (max-width: 767px) {
-        font-size: 13px;
-    }
-}
 
 //fixing clearfix class
 .clearfix {
@@ -531,7 +533,9 @@ body {
         .icon { //span with <i>
             font-size: 12px;
             top: 6px;
-
+            @media only screen and (max-width: 767px) {
+                top: 4px;
+            }
         }
     }
     //  text intro 
