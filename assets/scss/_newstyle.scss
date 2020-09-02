@@ -789,11 +789,11 @@ body {
                 @media only screen and (max-width: 767px) {
                     font-size: 13px;
                 }
-                &::before{ //viñeta
-                    @media only screen and (max-width: 767px) {
-                        top:16px;
-                    }
-                }
+                // &::before{ //viñeta
+                //     @media only screen and (max-width: 767px) {
+                //         top:16px;
+                //     }
+                // }
                 &:hover{
                     &::before{  
                         background-color: $accentbtn;
