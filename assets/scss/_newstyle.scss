@@ -21,7 +21,7 @@ $text-whiteaccent: $whiteaccent;
 
 // Contenedores
 * {
-    //outline: 1px solid rgba(greenyellow, 0.5) !important;
+    outline: 1px solid rgba(greenyellow, 0.5) !important;
     font-display: block;
 }
 /* GENERAL */
@@ -166,6 +166,7 @@ body {
     .wprt-container {
         @media only screen and (min-width: 992px) {
             max-width: 1000px;
+            width: 90%
         }
 
     }
@@ -683,6 +684,7 @@ body {
         padding-top: 15px;
         padding-bottom: 15px;
         @media only screen and (min-width: 992px) {
+            width: 95%;
             max-width: 1000px;
             padding-left: 15px;
             padding-right: 15px;
@@ -734,6 +736,13 @@ body {
         background: url('assets/img/otros-servicios/page-title.jpg') center center/cover;
     }
     //
+    .wprt-container  {
+        max-width: 1000px;
+        width: 100%;
+        @media only screen and (max-width: 991px) and (min-width: 768px) {
+            max-width: 750px; 
+        }
+    }
     .featured-title-inner-wrap {
         height: 400px;
         @media only screen and (max-width: 991px) {
@@ -763,6 +772,9 @@ body {
             left: 0;
             bottom: 0;
             border-radius: 5px;
+            @media only screen and (max-width: 767px) {
+                bottom: -5px;
+            }
         }
     }
 }
@@ -774,6 +786,11 @@ body {
             padding-right: 40px;
             border: 2px solid transparent;
             >a{
+                &::before{ //viñeta
+                    @media only screen and (max-width: 767px) {
+                        top:16px;
+                    }
+                }
                 &:hover{
                     &::before{
                         background-color: $accentbtn;
@@ -825,17 +842,33 @@ body {
             border-radius: 5px;
         }
     }
+    .text-justify {
+        @media only screen and (max-width: 767px) {
+            text-align: initial;
+        }
+    }
 }
 .service-box-content{
+    
     .img-service-wrap {
-        margin-left: -5px;
-        margin-right: -5px;
         margin-bottom: 15px;
-        margin-top: 10px;
+        @media only screen and (min-width: 450px) {
+            margin-top: 10px;
+            margin-left: -5px;
+            margin-right: -5px;    
+        }
         >img {
-            width: 50%;
-            float: left;
-            padding: 0 5px;
+            width: 100%;
+            margin-bottom: 10px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+            @media only screen and (min-width: 450px) {
+                width: 50%;
+                float: left;
+                padding: 0 5px;
+                margin-bottom: 0px;
+            }
         }
     }
     .img-service-wrap-full {
