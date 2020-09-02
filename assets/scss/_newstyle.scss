@@ -786,13 +786,16 @@ body {
             padding-right: 40px;
             border: 2px solid transparent;
             >a{
+                @media only screen and (max-width: 767px) {
+                    font-size: 13px;
+                }
                 &::before{ //viñeta
                     @media only screen and (max-width: 767px) {
                         top:16px;
                     }
                 }
                 &:hover{
-                    &::before{
+                    &::before{  
                         background-color: $accentbtn;
                     }
                 }
