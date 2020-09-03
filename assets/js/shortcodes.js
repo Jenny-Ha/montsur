@@ -22,14 +22,15 @@
             }
 
             if ( heroHeight != 'full' ) {
-                heroHeight = parseInt(heroHeight, 10);
+                // heroHeight = parseInt(heroHeight, 10);
+                heroHeight = windowHeight - $('#site-header-wrap').height();
             } else {
                 heroHeight = windowHeight - headerHeight;
             }
             
             hero.css({ height: heroHeight + "px" });
             contentTopMargin = (heroHeight - contentHeight) / 2;
-            heroContent.css("margin-top", contentTopMargin + "px");
+            heroContent.css("margin-top", headerHeight + "px");
         })
 
         if ( $().vegas ) {
