@@ -23,7 +23,7 @@
 
             if ( heroHeight != 'full' ) {
                 // heroHeight = parseInt(heroHeight, 10);
-                heroHeight = windowHeight - $('#site-header-wrap').height();
+                heroHeight = windowHeight - $('#site-header-wrap').outerHeight()/2;
             } else {
                 heroHeight = windowHeight - headerHeight;
             }
