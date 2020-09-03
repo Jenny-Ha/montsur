@@ -14,14 +14,13 @@
     $body = str_replace('%Name%', $name, $body);
     $body = str_replace('%Email%', $email, $body);
     $body = str_replace('%Phone%', $phone, $body);
+    $body = str_replace('%Message%', $message, $body);
     if (!empty($company)) {
 		$body = str_replace('%Company%', $company, $body);
 	}
 	else { 
 		$body = str_replace('%Company%', '(El consultante no ingresó este dato)', $body);
 	}
-    $body = str_replace('%Message%', $message, $body);
-
     $body = preg_replace('/\\\\/','', $body); //Strip backslashes
 
     /* Config PHP MAILER */
