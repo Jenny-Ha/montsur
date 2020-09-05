@@ -652,13 +652,15 @@ ul.list-with-icon {
     .list-footer  { //ul
         margin-left: 20px !important;
         >li {
-            .icon {
-                top: 2px;
-            }
             padding-left: 10px !important;
             font-size: 13px;
             @media only screen and (min-width: 768px) {
                 font-size: 15px;
+            }
+            .icon {
+                @media only screen and (max-width: 767px) {
+                    top: 5px;
+                }
             }
         }
     }
@@ -917,21 +919,6 @@ ul.list-with-icon {
 /* Contacto*/
 .row-promotion {
     background-color: lighten($color: $accentbtn, $amount:  0%);
-    // background-color: darken($color: $accentbtn, $amount: 5%);
-    /* background:url('assets/img/bg-contact-row.jpg');
-    background-size: cover;
-    background-position-y: 25%;
-    background-position-x: 75%;
-    position: relative;
-    &::before {
-        content: "";
-        background-color: rgba(0, 0, 0, 0.5);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-    } */
     .wprt-action-box {
         .heading-wrap {
             .heading{
