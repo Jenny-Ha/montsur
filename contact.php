@@ -1,13 +1,27 @@
 <?php 
 
     //Correo que se enviará
+    $nameTo = 'Info Montsur';
+    $nameFrom = 'Contacto - montsur.com';
+
     $name 	 = $_POST['name'];
 	$email 	 = $_POST['email'];
     $phone = $_POST['phone'];
     $company = $_POST['subject'];
     $message = $_POST['message'];
-
-    $body = "Nombre del consultante: " . $name . "<br> Nombre de su compañia: " . $company . "<br>Correo: " . $email . "<br>Teléfono: " . $phone . "<br>Mensaje: " . $message;
+    
+    $body = file_get_contents('includes/plantilla-correo.html');
+    $body = str_replace('%Name%', $name, $body);
+    $body = str_replace('%Email%', $email, $body);
+    $body = str_replace('%Phone%', $phone, $body);
+    $body = str_replace('%Message%', $message, $body);
+    if (!empty($company)) {
+		$body = str_replace('%Company%', $company, $body);
+	}
+	else { 
+		$body = str_replace('%Company%', '(El consultante no ingresó este dato)', $body);
+	}
+    $body = preg_replace('/\\\\/','', $body); //Strip backslashes
 
     /* Config PHP MAILER */
     require "includes/PHPMailer/Exception.php";
@@ -33,14 +47,14 @@
     $oMail->SMTPAutoTLS = false;
 
     /* Sent info */
-    $oMail->setFrom("info@montsur.com","Contacto de Web Montsur");
-    $oMail->addAddress("ruiai.bxb@gmail.com",$name);
+    $oMail->setFrom("ventas@montsur.com", $nameFrom);
+    $oMail->addAddress("info@montsur.com",$nameTo);
     
     // Content
-    $oMail->isHTML(true);
     $oMail->Subject='Nuevo mensaje de '. $name;
-    $oMail->Body = $body;
-    //$oMail->msgHTML("Hola esto es una prueba de envió de correo");
+    $oMail->msgHTML($body);
+    $oMail->isHTML(true);
+    //$oMail->Body = $body;
     $oMail->CharSet = 'UTF-8';
    
 
@@ -49,11 +63,5 @@
         echo 'Mailer Error: '. $oMail->ErrorInfo;
     } else {
         echo 'Success'; // El msg que resibirá el AJAX en shortcodes.js
-    }
-    
-    /* if (!$oMail->send()) {
-        echo 'Mailer Error: '. $oMail->ErrorInfo;
-    } else {
-        echo 'Message sent!';
-    } */    
+    }    
 ?>

@@ -22,14 +22,15 @@
             }
 
             if ( heroHeight != 'full' ) {
-                heroHeight = parseInt(heroHeight, 10);
+                // heroHeight = parseInt(heroHeight, 10);
+                heroHeight = windowHeight - $('#site-header-wrap').outerHeight()/2;
             } else {
                 heroHeight = windowHeight - headerHeight;
             }
             
             hero.css({ height: heroHeight + "px" });
             contentTopMargin = (heroHeight - contentHeight) / 2;
-            heroContent.css("margin-top", contentTopMargin + "px");
+            heroContent.css("margin-top", headerHeight + "px");
         })
 
         if ( $().vegas ) {
@@ -681,10 +682,10 @@
                                 var result, cls;
 
                                 if ( msg == 'Success' ) { // Msg es el echo de contct.php
-                                    result = '¡Gracias!. Su mensaje fue enviado. Le responderemos cuanto antes';
+                                    result = '¡Gracias!. Su mensaje fue enviado. Le responderemos cuanto antes.';
                                     cls = 'success';
                                 } else {
-                                    result = 'Lo sentimos. En este momento no podemos enviar su mensaje. Puede escribirnos a nuestro Whatsapp con el botón en el lado derecho.';
+                                    result = 'Lo sentimos. En este momento no podemos enviar su mensaje. Puede escribirnos también por Whatsapp para atenderlo.';
                                     cls = 'error';
                                 }
 

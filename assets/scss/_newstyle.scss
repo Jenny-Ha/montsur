@@ -76,6 +76,13 @@ h3 {
     }
 }
 
+.wprt-alert{
+    text-align: center;
+    .remove {
+        color: inherit;
+    }
+}
+
 ul.list-with-icon {
     list-style-type: none;
     // margin-left: 20px;
@@ -194,7 +201,6 @@ ul.list-with-icon {
         &::before {
             position: absolute;
             background-color: #111;
-            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
@@ -331,6 +337,9 @@ ul.list-with-icon {
                 }
                 .icon {
                     top: 3px;
+                    @media only screen and (max-width: 767px) {
+                        top: 5px;
+                    }
                 }
             }
         }
@@ -576,7 +585,7 @@ ul.list-with-icon {
                 }
             }
             .wpcf7-form-control {
-                color: #666;
+                color: #333;
                 font-weight: 500;
                 background-color: white;
                 border-color: lighten($color: $accentbtn, $amount: 3%);
@@ -643,13 +652,15 @@ ul.list-with-icon {
     .list-footer  { //ul
         margin-left: 20px !important;
         >li {
-            .icon {
-                top: 2px;
-            }
             padding-left: 10px !important;
             font-size: 13px;
             @media only screen and (min-width: 768px) {
                 font-size: 15px;
+            }
+            .icon {
+                @media only screen and (max-width: 767px) {
+                    top: 5px;
+                }
             }
         }
     }
@@ -900,7 +911,7 @@ ul.list-with-icon {
     .icon {
         top: 3px;
         @media only screen and (max-width: 767px) {
-            top: 5px;
+            top: 6px;
         }
     }
 }
@@ -908,21 +919,6 @@ ul.list-with-icon {
 /* Contacto*/
 .row-promotion {
     background-color: lighten($color: $accentbtn, $amount:  0%);
-    // background-color: darken($color: $accentbtn, $amount: 5%);
-    /* background:url('assets/img/bg-contact-row.jpg');
-    background-size: cover;
-    background-position-y: 25%;
-    background-position-x: 75%;
-    position: relative;
-    &::before {
-        content: "";
-        background-color: rgba(0, 0, 0, 0.5);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-    } */
     .wprt-action-box {
         .heading-wrap {
             .heading{
@@ -943,6 +939,44 @@ ul.list-with-icon {
                 background-color: #333;
                 border-color: #333;
             }
+        }
+    }
+}
+
+/* Page Nnot Found */
+.hero-not-found {
+    background-color: gray;
+    background: url('assets/img/bg-not-found.jpg') center center/cover;
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+    &::before {
+        content: '';
+        position: absolute;
+        background-color: #111;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.35;
+        z-index: 0;
+    }
+    .nf-content {
+        margin-top: 75px;
+        margin-bottom: 75px;
+        h1 {
+            text-transform: uppercase;
+            color: white;
+            font-weight: 600;
+            >span {
+                // color: lighten($color:$text-primary , $amount: 8%);
+                color: $text-primary;
+                text-shadow: 1px 1px #111;
+            }
+        }
+        p {
+            color: white;
+            font-size: 1.1em;
         }
     }
 }
